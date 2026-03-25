@@ -1,3 +1,11 @@
+const fs = require('fs');
+const path = require('path');
+
+// Carrega o conteúdo de forma síncrona logo no início
+const caminhoArquivo = path.join(__dirname, 'conteudo.json');
+const meuConteudo = JSON.parse(fs.readFileSync(caminhoArquivo, 'utf8'));
+
+const catecismo = require('./brevecatecismo.json');
 const express = require('express');
 const Alexa = require('ask-sdk-core');
 const { ExpressAdapter } = require('ask-sdk-express-adapter');
