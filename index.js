@@ -1,3 +1,5 @@
+const catecismo = require('./brevecatecismo.json');
+
 const fs = require('fs');
 const path = require('path');
 
