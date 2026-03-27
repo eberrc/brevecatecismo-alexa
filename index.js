@@ -1,6 +1,6 @@
 const express = require('express');
 const Alexa = require('ask-sdk-core');
-const catecismo = require('./catecismo.json');
+const catecismo = require('./brevecatecismo.json');
 
 const app = express();
 app.use(express.json());
