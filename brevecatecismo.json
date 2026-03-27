@@ -2,643 +2,556 @@
   "1": {
     "pergunta": "Qual é o fim principal do homem?",
     "resposta_fiel": "O fim principal do homem é glorificar a Deus e gozá-lo para sempre.",
-    "resposta_alexa": "O principal objetivo do ser humano é glorificar a Deus e desfrutar dele para sempre.",
-    "resposta_ssml": "<speak>Pergunta 1. <break time='500ms'/> Qual é o fim principal do homem? <break time='700ms'/> O fim principal do homem é glorificar a Deus e gozá-lo para sempre.</speak>"
+    "resposta_alexa": "O principal propósito do ser humano é glorificar a Deus e desfrutar dele para sempre.",
+    "resposta_ssml": "<speak>Pergunta 1. <break time='400ms'/> O principal propósito do ser humano é glorificar a Deus <break time='300ms'/> e desfrutar dele para sempre.</speak>"
   },
   "2": {
-    "pergunta": "Pergunta 2 do Breve Catecismo de Westminster.",
-    "resposta_fiel": "Resposta fiel da pergunta 2, conforme o texto clássico do catecismo.",
-    "resposta_alexa": "Resposta adaptada para Alexa da pergunta 2.",
-    "resposta_ssml": "<speak>Pergunta 2. <break time='500ms'/> Resposta adaptada com pausas.</speak>"
+    "pergunta": "Que regra Deus nos deu para nos dirigir na maneira de o glorificar e gozar?",
+    "resposta_fiel": "A Palavra de Deus, que se acha nas Escrituras do Antigo e do Novo Testamento, é a única regra para nos dirigir na maneira de o glorificar e gozar.",
+    "resposta_alexa": "A Bíblia é a única regra que nos ensina como glorificar a Deus e desfrutar dele.",
+    "resposta_ssml": "<speak>Pergunta 2. <break time='400ms'/> A Bíblia é a única regra que nos ensina <break time='300ms'/> como glorificar a Deus <break time='300ms'/> e desfrutar dele.</speak>"
   },
   "3": {
-    "pergunta": "Pergunta 3 do Breve Catecismo de Westminster.",
-    "resposta_fiel": "Resposta fiel da pergunta 3, conforme o texto clássico do catecismo.",
-    "resposta_alexa": "Resposta adaptada para Alexa da pergunta 3.",
-    "resposta_ssml": "<speak>Pergunta 3. <break time='500ms'/> Resposta adaptada com pausas.</speak>"
+    "pergunta": "Que é que as Escrituras principalmente ensinam?",
+    "resposta_fiel": "As Escrituras principalmente ensinam o que o homem deve crer acerca de Deus e o dever que Deus requer do homem.",
+    "resposta_alexa": "As Escrituras ensinam o que devemos crer sobre Deus e o que Deus espera de nós.",
+    "resposta_ssml": "<speak>Pergunta 3. <break time='400ms'/> As Escrituras ensinam o que devemos crer sobre Deus <break time='300ms'/> e o que Deus espera de nós.</speak>"
   },
   "4": {
-    "pergunta": "Pergunta 4 do Breve Catecismo de Westminster.",
-    "resposta_fiel": "Resposta fiel da pergunta 4, conforme o texto clássico do catecismo.",
-    "resposta_alexa": "Resposta adaptada para Alexa da pergunta 4.",
-    "resposta_ssml": "<speak>Pergunta 4. <break time='500ms'/> Resposta adaptada com pausas.</speak>"
+    "pergunta": "Quem é Deus?",
+    "resposta_fiel": "Deus é Espírito, infinito, eterno e imutável em seu ser, sabedoria, poder, santidade, justiça, bondade e verdade.",
+    "resposta_alexa": "Deus é Espírito, infinito, eterno e imutável em tudo o que ele é.",
+    "resposta_ssml": "<speak>Pergunta 4. <break time='400ms'/> Deus é Espírito, infinito, eterno <break time='300ms'/> e imutável.</speak>"
   },
   "5": {
-    "pergunta": "Pergunta 5 do Breve Catecismo de Westminster.",
-    "resposta_fiel": "Resposta fiel da pergunta 5, conforme o texto clássico do catecismo.",
-    "resposta_alexa": "Resposta adaptada para Alexa da pergunta 5.",
-    "resposta_ssml": "<speak>Pergunta 5. <break time='500ms'/> Resposta adaptada com pausas.</speak>"
+    "pergunta": "Há mais de um Deus?",
+    "resposta_fiel": "Há um só Deus, o Deus vivo e verdadeiro.",
+    "resposta_alexa": "Existe apenas um Deus, o Deus verdadeiro e vivo.",
+    "resposta_ssml": "<speak>Pergunta 5. <break time='400ms'/> Existe apenas um Deus <break time='300ms'/> o Deus verdadeiro e vivo.</speak>"
   },
   "6": {
-    "pergunta": "Pergunta 6 do Breve Catecismo de Westminster.",
-    "resposta_fiel": "Resposta fiel da pergunta 6, conforme o texto clássico do catecismo.",
-    "resposta_alexa": "Resposta adaptada para Alexa da pergunta 6.",
-    "resposta_ssml": "<speak>Pergunta 6. <break time='500ms'/> Resposta adaptada com pausas.</speak>"
+    "pergunta": "Quantas pessoas há na Divindade?",
+    "resposta_fiel": "Há três pessoas na Divindade: o Pai, o Filho e o Espírito Santo.",
+    "resposta_alexa": "Há três pessoas na Divindade: o Pai, o Filho e o Espírito Santo.",
+    "resposta_ssml": "<speak>Pergunta 6. <break time='400ms'/> Há três pessoas na Divindade <break time='300ms'/> o Pai, o Filho e o Espírito Santo.</speak>"
   },
   "7": {
-    "pergunta": "Pergunta 7 do Breve Catecismo de Westminster.",
-    "resposta_fiel": "Resposta fiel da pergunta 7, conforme o texto clássico do catecismo.",
-    "resposta_alexa": "Resposta adaptada para Alexa da pergunta 7.",
-    "resposta_ssml": "<speak>Pergunta 7. <break time='500ms'/> Resposta adaptada com pausas.</speak>"
+    "pergunta": "Que são os decretos de Deus?",
+    "resposta_fiel": "Os decretos de Deus são o seu eterno propósito, segundo o conselho da sua vontade, pelo qual, para a sua própria glória, ele preordenou tudo o que acontece.",
+    "resposta_alexa": "Os decretos de Deus são seu plano eterno pelo qual ele determinou tudo o que acontece.",
+    "resposta_ssml": "<speak>Pergunta 7. <break time='400ms'/> Os decretos de Deus são seu plano eterno <break time='300ms'/> pelo qual ele determinou tudo o que acontece.</speak>"
   },
   "8": {
-    "pergunta": "Pergunta 8 do Breve Catecismo de Westminster.",
-    "resposta_fiel": "Resposta fiel da pergunta 8, conforme o texto clássico do catecismo.",
-    "resposta_alexa": "Resposta adaptada para Alexa da pergunta 8.",
-    "resposta_ssml": "<speak>Pergunta 8. <break time='500ms'/> Resposta adaptada com pausas.</speak>"
+    "pergunta": "Como executa Deus os seus decretos?",
+    "resposta_fiel": "Deus executa os seus decretos nas obras da criação e da providência.",
+    "resposta_alexa": "Deus realiza seus planos por meio da criação e da providência.",
+    "resposta_ssml": "<speak>Pergunta 8. <break time='400ms'/> Deus realiza seus planos <break time='300ms'/> por meio da criação e da providência.</speak>"
   },
   "9": {
-    "pergunta": "Pergunta 9 do Breve Catecismo de Westminster.",
-    "resposta_fiel": "Resposta fiel da pergunta 9, conforme o texto clássico do catecismo.",
-    "resposta_alexa": "Resposta adaptada para Alexa da pergunta 9.",
-    "resposta_ssml": "<speak>Pergunta 9. <break time='500ms'/> Resposta adaptada com pausas.</speak>"
+    "pergunta": "Que é a obra da criação?",
+    "resposta_fiel": "A obra da criação é aquele ato pelo qual Deus fez todas as coisas do nada.",
+    "resposta_alexa": "A criação é o ato pelo qual Deus fez todas as coisas do nada.",
+    "resposta_ssml": "<speak>Pergunta 9. <break time='400ms'/> A criação é o ato pelo qual Deus fez todas as coisas <break time='300ms'/> do nada.</speak>"
   },
   "10": {
-    "pergunta": "Pergunta 10 do Breve Catecismo de Westminster.",
-    "resposta_fiel": "Resposta fiel da pergunta 10, conforme o texto clássico do catecismo.",
-    "resposta_alexa": "Resposta adaptada para Alexa da pergunta 10.",
-    "resposta_ssml": "<speak>Pergunta 10. <break time='500ms'/> Resposta adaptada com pausas.</speak>"
+    "pergunta": "Como criou Deus o homem?",
+    "resposta_fiel": "Deus criou o homem macho e fêmea, conforme a sua própria imagem.",
+    "resposta_alexa": "Deus criou o ser humano, homem e mulher, à sua própria imagem.",
+    "resposta_ssml": "<speak>Pergunta 10. <break time='400ms'/> Deus criou o ser humano <break time='300ms'/> homem e mulher <break time='300ms'/> à sua própria imagem.</speak>"
   },
   "11": {
-    "pergunta": "Pergunta 11 do Breve Catecismo de Westminster.",
-    "resposta_fiel": "Resposta fiel da pergunta 11, conforme o texto clássico do catecismo.",
-    "resposta_alexa": "Resposta adaptada para Alexa da pergunta 11.",
-    "resposta_ssml": "<speak>Pergunta 11. <break time='500ms'/> Resposta adaptada com pausas.</speak>"
+    "pergunta": "Quais são as obras da providência de Deus?",
+    "resposta_fiel": "As obras da providência de Deus são a sua maneira santíssima, sábia e poderosa de preservar e governar todas as suas criaturas e todas as suas ações.",
+    "resposta_alexa": "A providência de Deus é como ele preserva e governa todas as coisas com sabedoria e poder.",
+    "resposta_ssml": "<speak>Pergunta 11. <break time='400ms'/> A providência de Deus é como ele preserva <break time='300ms'/> e governa todas as coisas.</speak>"
   },
   "12": {
-    "pergunta": "Pergunta 12 do Breve Catecismo de Westminster.",
-    "resposta_fiel": "Resposta fiel da pergunta 12, conforme o texto clássico do catecismo.",
-    "resposta_alexa": "Resposta adaptada para Alexa da pergunta 12.",
-    "resposta_ssml": "<speak>Pergunta 12. <break time='500ms'/> Resposta adaptada com pausas.</speak>"
+    "pergunta": "Que ato especial de providência exerceu Deus para com o homem no estado em que ele foi criado?",
+    "resposta_fiel": "Quando Deus criou o homem, entrou com ele em um pacto de vida, sob condição de perfeita obediência.",
+    "resposta_alexa": "Deus fez um pacto com o homem, prometendo vida mediante perfeita obediência.",
+    "resposta_ssml": "<speak>Pergunta 12. <break time='400ms'/> Deus fez um pacto com o homem <break time='300ms'/> prometendo vida mediante obediência perfeita.</speak>"
   },
   "13": {
-    "pergunta": "Pergunta 13 do Breve Catecismo de Westminster.",
-    "resposta_fiel": "Resposta fiel da pergunta 13, conforme o texto clássico do catecismo.",
-    "resposta_alexa": "Resposta adaptada para Alexa da pergunta 13.",
-    "resposta_ssml": "<speak>Pergunta 13. <break time='500ms'/> Resposta adaptada com pausas.</speak>"
+    "pergunta": "Nossos primeiros pais permaneceram no estado em que foram criados?",
+    "resposta_fiel": "Nossos primeiros pais, sendo deixados à liberdade da sua própria vontade, caíram do estado em que foram criados, pecando contra Deus.",
+    "resposta_alexa": "Adão e Eva caíram do estado em que foram criados ao pecarem contra Deus.",
+    "resposta_ssml": "<speak>Pergunta 13. <break time='400ms'/> Adão e Eva caíram <break time='300ms'/> ao pecarem contra Deus.</speak>"
   },
   "14": {
-    "pergunta": "Pergunta 14 do Breve Catecismo de Westminster.",
-    "resposta_fiel": "Resposta fiel da pergunta 14, conforme o texto clássico do catecismo.",
-    "resposta_alexa": "Resposta adaptada para Alexa da pergunta 14.",
-    "resposta_ssml": "<speak>Pergunta 14. <break time='500ms'/> Resposta adaptada com pausas.</speak>"
+    "pergunta": "Que é o pecado?",
+    "resposta_fiel": "O pecado é qualquer falta de conformidade com a lei de Deus ou transgressão dessa lei.",
+    "resposta_alexa": "O pecado é não obedecer à lei de Deus ou agir contra ela.",
+    "resposta_ssml": "<speak>Pergunta 14. <break time='400ms'/> O pecado é não obedecer à lei de Deus <break time='300ms'/> ou agir contra ela.</speak>"
   },
   "15": {
-    "pergunta": "Pergunta 15 do Breve Catecismo de Westminster.",
-    "resposta_fiel": "Resposta fiel da pergunta 15, conforme o texto clássico do catecismo.",
-    "resposta_alexa": "Resposta adaptada para Alexa da pergunta 15.",
-    "resposta_ssml": "<speak>Pergunta 15. <break time='500ms'/> Resposta adaptada com pausas.</speak>"
-  },
-  "16": {
-    "pergunta": "Pergunta 16 do Breve Catecismo de Westminster.",
-    "resposta_fiel": "Resposta fiel da pergunta 16, conforme o texto clássico do catecismo.",
-    "resposta_alexa": "Resposta adaptada para Alexa da pergunta 16.",
-    "resposta_ssml": "<speak>Pergunta 16. <break time='500ms'/> Resposta adaptada com pausas.</speak>"
-  },
-  "17": {
-    "pergunta": "Pergunta 17 do Breve Catecismo de Westminster.",
-    "resposta_fiel": "Resposta fiel da pergunta 17, conforme o texto clássico do catecismo.",
-    "resposta_alexa": "Resposta adaptada para Alexa da pergunta 17.",
-    "resposta_ssml": "<speak>Pergunta 17. <break time='500ms'/> Resposta adaptada com pausas.</speak>"
-  },
-  "18": {
-    "pergunta": "Pergunta 18 do Breve Catecismo de Westminster.",
-    "resposta_fiel": "Resposta fiel da pergunta 18, conforme o texto clássico do catecismo.",
-    "resposta_alexa": "Resposta adaptada para Alexa da pergunta 18.",
-    "resposta_ssml": "<speak>Pergunta 18. <break time='500ms'/> Resposta adaptada com pausas.</speak>"
-  },
-  "19": {
-    "pergunta": "Pergunta 19 do Breve Catecismo de Westminster.",
-    "resposta_fiel": "Resposta fiel da pergunta 19, conforme o texto clássico do catecismo.",
-    "resposta_alexa": "Resposta adaptada para Alexa da pergunta 19.",
-    "resposta_ssml": "<speak>Pergunta 19. <break time='500ms'/> Resposta adaptada com pausas.</speak>"
-  },
-  "20": {
-    "pergunta": "Pergunta 20 do Breve Catecismo de Westminster.",
-    "resposta_fiel": "Resposta fiel da pergunta 20, conforme o texto clássico do catecismo.",
-    "resposta_alexa": "Resposta adaptada para Alexa da pergunta 20.",
-    "resposta_ssml": "<speak>Pergunta 20. <break time='500ms'/> Resposta adaptada com pausas.</speak>"
-  },
-  "21": {
-    "pergunta": "Pergunta 21 do Breve Catecismo de Westminster.",
-    "resposta_fiel": "Resposta fiel da pergunta 21, conforme o texto clássico do catecismo.",
-    "resposta_alexa": "Resposta adaptada para Alexa da pergunta 21.",
-    "resposta_ssml": "<speak>Pergunta 21. <break time='500ms'/> Resposta adaptada com pausas.</speak>"
-  },
-  "22": {
-    "pergunta": "Pergunta 22 do Breve Catecismo de Westminster.",
-    "resposta_fiel": "Resposta fiel da pergunta 22, conforme o texto clássico do catecismo.",
-    "resposta_alexa": "Resposta adaptada para Alexa da pergunta 22.",
-    "resposta_ssml": "<speak>Pergunta 22. <break time='500ms'/> Resposta adaptada com pausas.</speak>"
-  },
-  "23": {
-    "pergunta": "Pergunta 23 do Breve Catecismo de Westminster.",
-    "resposta_fiel": "Resposta fiel da pergunta 23, conforme o texto clássico do catecismo.",
-    "resposta_alexa": "Resposta adaptada para Alexa da pergunta 23.",
-    "resposta_ssml": "<speak>Pergunta 23. <break time='500ms'/> Resposta adaptada com pausas.</speak>"
-  },
-  "24": {
-    "pergunta": "Pergunta 24 do Breve Catecismo de Westminster.",
-    "resposta_fiel": "Resposta fiel da pergunta 24, conforme o texto clássico do catecismo.",
-    "resposta_alexa": "Resposta adaptada para Alexa da pergunta 24.",
-    "resposta_ssml": "<speak>Pergunta 24. <break time='500ms'/> Resposta adaptada com pausas.</speak>"
-  },
-  "25": {
-    "pergunta": "Pergunta 25 do Breve Catecismo de Westminster.",
-    "resposta_fiel": "Resposta fiel da pergunta 25, conforme o texto clássico do catecismo.",
-    "resposta_alexa": "Resposta adaptada para Alexa da pergunta 25.",
-    "resposta_ssml": "<speak>Pergunta 25. <break time='500ms'/> Resposta adaptada com pausas.</speak>"
-  },
-  "26": {
-    "pergunta": "Pergunta 26 do Breve Catecismo de Westminster.",
-    "resposta_fiel": "Resposta fiel da pergunta 26, conforme o texto clássico do catecismo.",
-    "resposta_alexa": "Resposta adaptada para Alexa da pergunta 26.",
-    "resposta_ssml": "<speak>Pergunta 26. <break time='500ms'/> Resposta adaptada com pausas.</speak>"
-  },
-  "27": {
-    "pergunta": "Pergunta 27 do Breve Catecismo de Westminster.",
-    "resposta_fiel": "Resposta fiel da pergunta 27, conforme o texto clássico do catecismo.",
-    "resposta_alexa": "Resposta adaptada para Alexa da pergunta 27.",
-    "resposta_ssml": "<speak>Pergunta 27. <break time='500ms'/> Resposta adaptada com pausas.</speak>"
-  },
-  "28": {
-    "pergunta": "Pergunta 28 do Breve Catecismo de Westminster.",
-    "resposta_fiel": "Resposta fiel da pergunta 28, conforme o texto clássico do catecismo.",
-    "resposta_alexa": "Resposta adaptada para Alexa da pergunta 28.",
-    "resposta_ssml": "<speak>Pergunta 28. <break time='500ms'/> Resposta adaptada com pausas.</speak>"
-  },
-  "29": {
-    "pergunta": "Pergunta 29 do Breve Catecismo de Westminster.",
-    "resposta_fiel": "Resposta fiel da pergunta 29, conforme o texto clássico do catecismo.",
-    "resposta_alexa": "Resposta adaptada para Alexa da pergunta 29.",
-    "resposta_ssml": "<speak>Pergunta 29. <break time='500ms'/> Resposta adaptada com pausas.</speak>"
-  },
-  "30": {
-    "pergunta": "Pergunta 30 do Breve Catecismo de Westminster.",
-    "resposta_fiel": "Resposta fiel da pergunta 30, conforme o texto clássico do catecismo.",
-    "resposta_alexa": "Resposta adaptada para Alexa da pergunta 30.",
-    "resposta_ssml": "<speak>Pergunta 30. <break time='500ms'/> Resposta adaptada com pausas.</speak>"
-  },
-  "31": {
-    "pergunta": "Pergunta 31 do Breve Catecismo de Westminster.",
-    "resposta_fiel": "Resposta fiel da pergunta 31, conforme o texto clássico do catecismo.",
-    "resposta_alexa": "Resposta adaptada para Alexa da pergunta 31.",
-    "resposta_ssml": "<speak>Pergunta 31. <break time='500ms'/> Resposta adaptada com pausas.</speak>"
-  },
-  "32": {
-    "pergunta": "Pergunta 32 do Breve Catecismo de Westminster.",
-    "resposta_fiel": "Resposta fiel da pergunta 32, conforme o texto clássico do catecismo.",
-    "resposta_alexa": "Resposta adaptada para Alexa da pergunta 32.",
-    "resposta_ssml": "<speak>Pergunta 32. <break time='500ms'/> Resposta adaptada com pausas.</speak>"
-  },
-  "33": {
-    "pergunta": "Pergunta 33 do Breve Catecismo de Westminster.",
-    "resposta_fiel": "Resposta fiel da pergunta 33, conforme o texto clássico do catecismo.",
-    "resposta_alexa": "Resposta adaptada para Alexa da pergunta 33.",
-    "resposta_ssml": "<speak>Pergunta 33. <break time='500ms'/> Resposta adaptada com pausas.</speak>"
-  },
-  "34": {
-    "pergunta": "Pergunta 34 do Breve Catecismo de Westminster.",
-    "resposta_fiel": "Resposta fiel da pergunta 34, conforme o texto clássico do catecismo.",
-    "resposta_alexa": "Resposta adaptada para Alexa da pergunta 34.",
-    "resposta_ssml": "<speak>Pergunta 34. <break time='500ms'/> Resposta adaptada com pausas.</speak>"
-  },
-  "35": {
-    "pergunta": "Pergunta 35 do Breve Catecismo de Westminster.",
-    "resposta_fiel": "Resposta fiel da pergunta 35, conforme o texto clássico do catecismo.",
-    "resposta_alexa": "Resposta adaptada para Alexa da pergunta 35.",
-    "resposta_ssml": "<speak>Pergunta 35. <break time='500ms'/> Resposta adaptada com pausas.</speak>"
-  },
-  "36": {
-    "pergunta": "Pergunta 36 do Breve Catecismo de Westminster.",
-    "resposta_fiel": "Resposta fiel da pergunta 36, conforme o texto clássico do catecismo.",
-    "resposta_alexa": "Resposta adaptada para Alexa da pergunta 36.",
-    "resposta_ssml": "<speak>Pergunta 36. <break time='500ms'/> Resposta adaptada com pausas.</speak>"
-  },
-  "37": {
-    "pergunta": "Pergunta 37 do Breve Catecismo de Westminster.",
-    "resposta_fiel": "Resposta fiel da pergunta 37, conforme o texto clássico do catecismo.",
-    "resposta_alexa": "Resposta adaptada para Alexa da pergunta 37.",
-    "resposta_ssml": "<speak>Pergunta 37. <break time='500ms'/> Resposta adaptada com pausas.</speak>"
-  },
-  "38": {
-    "pergunta": "Pergunta 38 do Breve Catecismo de Westminster.",
-    "resposta_fiel": "Resposta fiel da pergunta 38, conforme o texto clássico do catecismo.",
-    "resposta_alexa": "Resposta adaptada para Alexa da pergunta 38.",
-    "resposta_ssml": "<speak>Pergunta 38. <break time='500ms'/> Resposta adaptada com pausas.</speak>"
-  },
-  "39": {
-    "pergunta": "Pergunta 39 do Breve Catecismo de Westminster.",
-    "resposta_fiel": "Resposta fiel da pergunta 39, conforme o texto clássico do catecismo.",
-    "resposta_alexa": "Resposta adaptada para Alexa da pergunta 39.",
-    "resposta_ssml": "<speak>Pergunta 39. <break time='500ms'/> Resposta adaptada com pausas.</speak>"
-  },
-  "40": {
-    "pergunta": "Pergunta 40 do Breve Catecismo de Westminster.",
-    "resposta_fiel": "Resposta fiel da pergunta 40, conforme o texto clássico do catecismo.",
-    "resposta_alexa": "Resposta adaptada para Alexa da pergunta 40.",
-    "resposta_ssml": "<speak>Pergunta 40. <break time='500ms'/> Resposta adaptada com pausas.</speak>"
-  },
-  "41": {
-    "pergunta": "Pergunta 41 do Breve Catecismo de Westminster.",
-    "resposta_fiel": "Resposta fiel da pergunta 41, conforme o texto clássico do catecismo.",
-    "resposta_alexa": "Resposta adaptada para Alexa da pergunta 41.",
-    "resposta_ssml": "<speak>Pergunta 41. <break time='500ms'/> Resposta adaptada com pausas.</speak>"
-  },
-  "42": {
-    "pergunta": "Pergunta 42 do Breve Catecismo de Westminster.",
-    "resposta_fiel": "Resposta fiel da pergunta 42, conforme o texto clássico do catecismo.",
-    "resposta_alexa": "Resposta adaptada para Alexa da pergunta 42.",
-    "resposta_ssml": "<speak>Pergunta 42. <break time='500ms'/> Resposta adaptada com pausas.</speak>"
-  },
-  "43": {
-    "pergunta": "Pergunta 43 do Breve Catecismo de Westminster.",
-    "resposta_fiel": "Resposta fiel da pergunta 43, conforme o texto clássico do catecismo.",
-    "resposta_alexa": "Resposta adaptada para Alexa da pergunta 43.",
-    "resposta_ssml": "<speak>Pergunta 43. <break time='500ms'/> Resposta adaptada com pausas.</speak>"
-  },
-  "44": {
-    "pergunta": "Pergunta 44 do Breve Catecismo de Westminster.",
-    "resposta_fiel": "Resposta fiel da pergunta 44, conforme o texto clássico do catecismo.",
-    "resposta_alexa": "Resposta adaptada para Alexa da pergunta 44.",
-    "resposta_ssml": "<speak>Pergunta 44. <break time='500ms'/> Resposta adaptada com pausas.</speak>"
-  },
-  "45": {
-    "pergunta": "Pergunta 45 do Breve Catecismo de Westminster.",
-    "resposta_fiel": "Resposta fiel da pergunta 45, conforme o texto clássico do catecismo.",
-    "resposta_alexa": "Resposta adaptada para Alexa da pergunta 45.",
-    "resposta_ssml": "<speak>Pergunta 45. <break time='500ms'/> Resposta adaptada com pausas.</speak>"
-  },
-  "46": {
-    "pergunta": "Pergunta 46 do Breve Catecismo de Westminster.",
-    "resposta_fiel": "Resposta fiel da pergunta 46, conforme o texto clássico do catecismo.",
-    "resposta_alexa": "Resposta adaptada para Alexa da pergunta 46.",
-    "resposta_ssml": "<speak>Pergunta 46. <break time='500ms'/> Resposta adaptada com pausas.</speak>"
-  },
-  "47": {
-    "pergunta": "Pergunta 47 do Breve Catecismo de Westminster.",
-    "resposta_fiel": "Resposta fiel da pergunta 47, conforme o texto clássico do catecismo.",
-    "resposta_alexa": "Resposta adaptada para Alexa da pergunta 47.",
-    "resposta_ssml": "<speak>Pergunta 47. <break time='500ms'/> Resposta adaptada com pausas.</speak>"
-  },
-  "48": {
-    "pergunta": "Pergunta 48 do Breve Catecismo de Westminster.",
-    "resposta_fiel": "Resposta fiel da pergunta 48, conforme o texto clássico do catecismo.",
-    "resposta_alexa": "Resposta adaptada para Alexa da pergunta 48.",
-    "resposta_ssml": "<speak>Pergunta 48. <break time='500ms'/> Resposta adaptada com pausas.</speak>"
-  },
-  "49": {
-    "pergunta": "Pergunta 49 do Breve Catecismo de Westminster.",
-    "resposta_fiel": "Resposta fiel da pergunta 49, conforme o texto clássico do catecismo.",
-    "resposta_alexa": "Resposta adaptada para Alexa da pergunta 49.",
-    "resposta_ssml": "<speak>Pergunta 49. <break time='500ms'/> Resposta adaptada com pausas.</speak>"
-  },
-  "50": {
-    "pergunta": "Pergunta 50 do Breve Catecismo de Westminster.",
-    "resposta_fiel": "Resposta fiel da pergunta 50, conforme o texto clássico do catecismo.",
-    "resposta_alexa": "Resposta adaptada para Alexa da pergunta 50.",
-    "resposta_ssml": "<speak>Pergunta 50. <break time='500ms'/> Resposta adaptada com pausas.</speak>"
-  },
-  "51": {
-    "pergunta": "Pergunta 51 do Breve Catecismo de Westminster.",
-    "resposta_fiel": "Resposta fiel da pergunta 51, conforme o texto clássico do catecismo.",
-    "resposta_alexa": "Resposta adaptada para Alexa da pergunta 51.",
-    "resposta_ssml": "<speak>Pergunta 51. <break time='500ms'/> Resposta adaptada com pausas.</speak>"
-  },
-  "52": {
-    "pergunta": "Pergunta 52 do Breve Catecismo de Westminster.",
-    "resposta_fiel": "Resposta fiel da pergunta 52, conforme o texto clássico do catecismo.",
-    "resposta_alexa": "Resposta adaptada para Alexa da pergunta 52.",
-    "resposta_ssml": "<speak>Pergunta 52. <break time='500ms'/> Resposta adaptada com pausas.</speak>"
-  },
-  "53": {
-    "pergunta": "Pergunta 53 do Breve Catecismo de Westminster.",
-    "resposta_fiel": "Resposta fiel da pergunta 53, conforme o texto clássico do catecismo.",
-    "resposta_alexa": "Resposta adaptada para Alexa da pergunta 53.",
-    "resposta_ssml": "<speak>Pergunta 53. <break time='500ms'/> Resposta adaptada com pausas.</speak>"
-  },
-  "54": {
-    "pergunta": "Pergunta 54 do Breve Catecismo de Westminster.",
-    "resposta_fiel": "Resposta fiel da pergunta 54, conforme o texto clássico do catecismo.",
-    "resposta_alexa": "Resposta adaptada para Alexa da pergunta 54.",
-    "resposta_ssml": "<speak>Pergunta 54. <break time='500ms'/> Resposta adaptada com pausas.</speak>"
-  },
-  "55": {
-    "pergunta": "Pergunta 55 do Breve Catecismo de Westminster.",
-    "resposta_fiel": "Resposta fiel da pergunta 55, conforme o texto clássico do catecismo.",
-    "resposta_alexa": "Resposta adaptada para Alexa da pergunta 55.",
-    "resposta_ssml": "<speak>Pergunta 55. <break time='500ms'/> Resposta adaptada com pausas.</speak>"
-  },
-  "56": {
-    "pergunta": "Pergunta 56 do Breve Catecismo de Westminster.",
-    "resposta_fiel": "Resposta fiel da pergunta 56, conforme o texto clássico do catecismo.",
-    "resposta_alexa": "Resposta adaptada para Alexa da pergunta 56.",
-    "resposta_ssml": "<speak>Pergunta 56. <break time='500ms'/> Resposta adaptada com pausas.</speak>"
-  },
-  "57": {
-    "pergunta": "Pergunta 57 do Breve Catecismo de Westminster.",
-    "resposta_fiel": "Resposta fiel da pergunta 57, conforme o texto clássico do catecismo.",
-    "resposta_alexa": "Resposta adaptada para Alexa da pergunta 57.",
-    "resposta_ssml": "<speak>Pergunta 57. <break time='500ms'/> Resposta adaptada com pausas.</speak>"
-  },
-  "58": {
-    "pergunta": "Pergunta 58 do Breve Catecismo de Westminster.",
-    "resposta_fiel": "Resposta fiel da pergunta 58, conforme o texto clássico do catecismo.",
-    "resposta_alexa": "Resposta adaptada para Alexa da pergunta 58.",
-    "resposta_ssml": "<speak>Pergunta 58. <break time='500ms'/> Resposta adaptada com pausas.</speak>"
-  },
-  "59": {
-    "pergunta": "Pergunta 59 do Breve Catecismo de Westminster.",
-    "resposta_fiel": "Resposta fiel da pergunta 59, conforme o texto clássico do catecismo.",
-    "resposta_alexa": "Resposta adaptada para Alexa da pergunta 59.",
-    "resposta_ssml": "<speak>Pergunta 59. <break time='500ms'/> Resposta adaptada com pausas.</speak>"
-  },
-  "60": {
-    "pergunta": "Pergunta 60 do Breve Catecismo de Westminster.",
-    "resposta_fiel": "Resposta fiel da pergunta 60, conforme o texto clássico do catecismo.",
-    "resposta_alexa": "Resposta adaptada para Alexa da pergunta 60.",
-    "resposta_ssml": "<speak>Pergunta 60. <break time='500ms'/> Resposta adaptada com pausas.</speak>"
-  },
-  "61": {
-    "pergunta": "Pergunta 61 do Breve Catecismo de Westminster.",
-    "resposta_fiel": "Resposta fiel da pergunta 61, conforme o texto clássico do catecismo.",
-    "resposta_alexa": "Resposta adaptada para Alexa da pergunta 61.",
-    "resposta_ssml": "<speak>Pergunta 61. <break time='500ms'/> Resposta adaptada com pausas.</speak>"
-  },
-  "62": {
-    "pergunta": "Pergunta 62 do Breve Catecismo de Westminster.",
-    "resposta_fiel": "Resposta fiel da pergunta 62, conforme o texto clássico do catecismo.",
-    "resposta_alexa": "Resposta adaptada para Alexa da pergunta 62.",
-    "resposta_ssml": "<speak>Pergunta 62. <break time='500ms'/> Resposta adaptada com pausas.</speak>"
-  },
-  "63": {
-    "pergunta": "Pergunta 63 do Breve Catecismo de Westminster.",
-    "resposta_fiel": "Resposta fiel da pergunta 63, conforme o texto clássico do catecismo.",
-    "resposta_alexa": "Resposta adaptada para Alexa da pergunta 63.",
-    "resposta_ssml": "<speak>Pergunta 63. <break time='500ms'/> Resposta adaptada com pausas.</speak>"
-  },
-  "64": {
-    "pergunta": "Pergunta 64 do Breve Catecismo de Westminster.",
-    "resposta_fiel": "Resposta fiel da pergunta 64, conforme o texto clássico do catecismo.",
-    "resposta_alexa": "Resposta adaptada para Alexa da pergunta 64.",
-    "resposta_ssml": "<speak>Pergunta 64. <break time='500ms'/> Resposta adaptada com pausas.</speak>"
-  },
-  "65": {
-    "pergunta": "Pergunta 65 do Breve Catecismo de Westminster.",
-    "resposta_fiel": "Resposta fiel da pergunta 65, conforme o texto clássico do catecismo.",
-    "resposta_alexa": "Resposta adaptada para Alexa da pergunta 65.",
-    "resposta_ssml": "<speak>Pergunta 65. <break time='500ms'/> Resposta adaptada com pausas.</speak>"
-  },
-  "66": {
-    "pergunta": "Pergunta 66 do Breve Catecismo de Westminster.",
-    "resposta_fiel": "Resposta fiel da pergunta 66, conforme o texto clássico do catecismo.",
-    "resposta_alexa": "Resposta adaptada para Alexa da pergunta 66.",
-    "resposta_ssml": "<speak>Pergunta 66. <break time='500ms'/> Resposta adaptada com pausas.</speak>"
-  },
-  "67": {
-    "pergunta": "Pergunta 67 do Breve Catecismo de Westminster.",
-    "resposta_fiel": "Resposta fiel da pergunta 67, conforme o texto clássico do catecismo.",
-    "resposta_alexa": "Resposta adaptada para Alexa da pergunta 67.",
-    "resposta_ssml": "<speak>Pergunta 67. <break time='500ms'/> Resposta adaptada com pausas.</speak>"
-  },
-  "68": {
-    "pergunta": "Pergunta 68 do Breve Catecismo de Westminster.",
-    "resposta_fiel": "Resposta fiel da pergunta 68, conforme o texto clássico do catecismo.",
-    "resposta_alexa": "Resposta adaptada para Alexa da pergunta 68.",
-    "resposta_ssml": "<speak>Pergunta 68. <break time='500ms'/> Resposta adaptada com pausas.</speak>"
-  },
-  "69": {
-    "pergunta": "Pergunta 69 do Breve Catecismo de Westminster.",
-    "resposta_fiel": "Resposta fiel da pergunta 69, conforme o texto clássico do catecismo.",
-    "resposta_alexa": "Resposta adaptada para Alexa da pergunta 69.",
-    "resposta_ssml": "<speak>Pergunta 69. <break time='500ms'/> Resposta adaptada com pausas.</speak>"
-  },
-  "70": {
-    "pergunta": "Pergunta 70 do Breve Catecismo de Westminster.",
-    "resposta_fiel": "Resposta fiel da pergunta 70, conforme o texto clássico do catecismo.",
-    "resposta_alexa": "Resposta adaptada para Alexa da pergunta 70.",
-    "resposta_ssml": "<speak>Pergunta 70. <break time='500ms'/> Resposta adaptada com pausas.</speak>"
-  },
-  "71": {
-    "pergunta": "Pergunta 71 do Breve Catecismo de Westminster.",
-    "resposta_fiel": "Resposta fiel da pergunta 71, conforme o texto clássico do catecismo.",
-    "resposta_alexa": "Resposta adaptada para Alexa da pergunta 71.",
-    "resposta_ssml": "<speak>Pergunta 71. <break time='500ms'/> Resposta adaptada com pausas.</speak>"
-  },
-  "72": {
-    "pergunta": "Pergunta 72 do Breve Catecismo de Westminster.",
-    "resposta_fiel": "Resposta fiel da pergunta 72, conforme o texto clássico do catecismo.",
-    "resposta_alexa": "Resposta adaptada para Alexa da pergunta 72.",
-    "resposta_ssml": "<speak>Pergunta 72. <break time='500ms'/> Resposta adaptada com pausas.</speak>"
-  },
-  "73": {
-    "pergunta": "Pergunta 73 do Breve Catecismo de Westminster.",
-    "resposta_fiel": "Resposta fiel da pergunta 73, conforme o texto clássico do catecismo.",
-    "resposta_alexa": "Resposta adaptada para Alexa da pergunta 73.",
-    "resposta_ssml": "<speak>Pergunta 73. <break time='500ms'/> Resposta adaptada com pausas.</speak>"
-  },
-  "74": {
-    "pergunta": "Pergunta 74 do Breve Catecismo de Westminster.",
-    "resposta_fiel": "Resposta fiel da pergunta 74, conforme o texto clássico do catecismo.",
-    "resposta_alexa": "Resposta adaptada para Alexa da pergunta 74.",
-    "resposta_ssml": "<speak>Pergunta 74. <break time='500ms'/> Resposta adaptada com pausas.</speak>"
-  },
-  "75": {
-    "pergunta": "Pergunta 75 do Breve Catecismo de Westminster.",
-    "resposta_fiel": "Resposta fiel da pergunta 75, conforme o texto clássico do catecismo.",
-    "resposta_alexa": "Resposta adaptada para Alexa da pergunta 75.",
-    "resposta_ssml": "<speak>Pergunta 75. <break time='500ms'/> Resposta adaptada com pausas.</speak>"
-  },
-  "76": {
-    "pergunta": "Pergunta 76 do Breve Catecismo de Westminster.",
-    "resposta_fiel": "Resposta fiel da pergunta 76, conforme o texto clássico do catecismo.",
-    "resposta_alexa": "Resposta adaptada para Alexa da pergunta 76.",
-    "resposta_ssml": "<speak>Pergunta 76. <break time='500ms'/> Resposta adaptada com pausas.</speak>"
-  },
-  "77": {
-    "pergunta": "Pergunta 77 do Breve Catecismo de Westminster.",
-    "resposta_fiel": "Resposta fiel da pergunta 77, conforme o texto clássico do catecismo.",
-    "resposta_alexa": "Resposta adaptada para Alexa da pergunta 77.",
-    "resposta_ssml": "<speak>Pergunta 77. <break time='500ms'/> Resposta adaptada com pausas.</speak>"
-  },
-  "78": {
-    "pergunta": "Pergunta 78 do Breve Catecismo de Westminster.",
-    "resposta_fiel": "Resposta fiel da pergunta 78, conforme o texto clássico do catecismo.",
-    "resposta_alexa": "Resposta adaptada para Alexa da pergunta 78.",
-    "resposta_ssml": "<speak>Pergunta 78. <break time='500ms'/> Resposta adaptada com pausas.</speak>"
-  },
-  "79": {
-    "pergunta": "Pergunta 79 do Breve Catecismo de Westminster.",
-    "resposta_fiel": "Resposta fiel da pergunta 79, conforme o texto clássico do catecismo.",
-    "resposta_alexa": "Resposta adaptada para Alexa da pergunta 79.",
-    "resposta_ssml": "<speak>Pergunta 79. <break time='500ms'/> Resposta adaptada com pausas.</speak>"
-  },
-  "80": {
-    "pergunta": "Pergunta 80 do Breve Catecismo de Westminster.",
-    "resposta_fiel": "Resposta fiel da pergunta 80, conforme o texto clássico do catecismo.",
-    "resposta_alexa": "Resposta adaptada para Alexa da pergunta 80.",
-    "resposta_ssml": "<speak>Pergunta 80. <break time='500ms'/> Resposta adaptada com pausas.</speak>"
-  },
-  "81": {
-    "pergunta": "Pergunta 81 do Breve Catecismo de Westminster.",
-    "resposta_fiel": "Resposta fiel da pergunta 81, conforme o texto clássico do catecismo.",
-    "resposta_alexa": "Resposta adaptada para Alexa da pergunta 81.",
-    "resposta_ssml": "<speak>Pergunta 81. <break time='500ms'/> Resposta adaptada com pausas.</speak>"
-  },
-  "82": {
-    "pergunta": "Pergunta 82 do Breve Catecismo de Westminster.",
-    "resposta_fiel": "Resposta fiel da pergunta 82, conforme o texto clássico do catecismo.",
-    "resposta_alexa": "Resposta adaptada para Alexa da pergunta 82.",
-    "resposta_ssml": "<speak>Pergunta 82. <break time='500ms'/> Resposta adaptada com pausas.</speak>"
-  },
-  "83": {
-    "pergunta": "Pergunta 83 do Breve Catecismo de Westminster.",
-    "resposta_fiel": "Resposta fiel da pergunta 83, conforme o texto clássico do catecismo.",
-    "resposta_alexa": "Resposta adaptada para Alexa da pergunta 83.",
-    "resposta_ssml": "<speak>Pergunta 83. <break time='500ms'/> Resposta adaptada com pausas.</speak>"
-  },
-  "84": {
-    "pergunta": "Pergunta 84 do Breve Catecismo de Westminster.",
-    "resposta_fiel": "Resposta fiel da pergunta 84, conforme o texto clássico do catecismo.",
-    "resposta_alexa": "Resposta adaptada para Alexa da pergunta 84.",
-    "resposta_ssml": "<speak>Pergunta 84. <break time='500ms'/> Resposta adaptada com pausas.</speak>"
-  },
-  "85": {
-    "pergunta": "Pergunta 85 do Breve Catecismo de Westminster.",
-    "resposta_fiel": "Resposta fiel da pergunta 85, conforme o texto clássico do catecismo.",
-    "resposta_alexa": "Resposta adaptada para Alexa da pergunta 85.",
-    "resposta_ssml": "<speak>Pergunta 85. <break time='500ms'/> Resposta adaptada com pausas.</speak>"
-  },
-  "86": {
-    "pergunta": "Pergunta 86 do Breve Catecismo de Westminster.",
-    "resposta_fiel": "Resposta fiel da pergunta 86, conforme o texto clássico do catecismo.",
-    "resposta_alexa": "Resposta adaptada para Alexa da pergunta 86.",
-    "resposta_ssml": "<speak>Pergunta 86. <break time='500ms'/> Resposta adaptada com pausas.</speak>"
-  },
-  "87": {
-    "pergunta": "Pergunta 87 do Breve Catecismo de Westminster.",
-    "resposta_fiel": "Resposta fiel da pergunta 87, conforme o texto clássico do catecismo.",
-    "resposta_alexa": "Resposta adaptada para Alexa da pergunta 87.",
-    "resposta_ssml": "<speak>Pergunta 87. <break time='500ms'/> Resposta adaptada com pausas.</speak>"
-  },
-  "88": {
-    "pergunta": "Pergunta 88 do Breve Catecismo de Westminster.",
-    "resposta_fiel": "Resposta fiel da pergunta 88, conforme o texto clássico do catecismo.",
-    "resposta_alexa": "Resposta adaptada para Alexa da pergunta 88.",
-    "resposta_ssml": "<speak>Pergunta 88. <break time='500ms'/> Resposta adaptada com pausas.</speak>"
-  },
-  "89": {
-    "pergunta": "Pergunta 89 do Breve Catecismo de Westminster.",
-    "resposta_fiel": "Resposta fiel da pergunta 89, conforme o texto clássico do catecismo.",
-    "resposta_alexa": "Resposta adaptada para Alexa da pergunta 89.",
-    "resposta_ssml": "<speak>Pergunta 89. <break time='500ms'/> Resposta adaptada com pausas.</speak>"
-  },
-  "90": {
-    "pergunta": "Pergunta 90 do Breve Catecismo de Westminster.",
-    "resposta_fiel": "Resposta fiel da pergunta 90, conforme o texto clássico do catecismo.",
-    "resposta_alexa": "Resposta adaptada para Alexa da pergunta 90.",
-    "resposta_ssml": "<speak>Pergunta 90. <break time='500ms'/> Resposta adaptada com pausas.</speak>"
-  },
-  "91": {
-    "pergunta": "Pergunta 91 do Breve Catecismo de Westminster.",
-    "resposta_fiel": "Resposta fiel da pergunta 91, conforme o texto clássico do catecismo.",
-    "resposta_alexa": "Resposta adaptada para Alexa da pergunta 91.",
-    "resposta_ssml": "<speak>Pergunta 91. <break time='500ms'/> Resposta adaptada com pausas.</speak>"
-  },
-  "92": {
-    "pergunta": "Pergunta 92 do Breve Catecismo de Westminster.",
-    "resposta_fiel": "Resposta fiel da pergunta 92, conforme o texto clássico do catecismo.",
-    "resposta_alexa": "Resposta adaptada para Alexa da pergunta 92.",
-    "resposta_ssml": "<speak>Pergunta 92. <break time='500ms'/> Resposta adaptada com pausas.</speak>"
-  },
-  "93": {
-    "pergunta": "Pergunta 93 do Breve Catecismo de Westminster.",
-    "resposta_fiel": "Resposta fiel da pergunta 93, conforme o texto clássico do catecismo.",
-    "resposta_alexa": "Resposta adaptada para Alexa da pergunta 93.",
-    "resposta_ssml": "<speak>Pergunta 93. <break time='500ms'/> Resposta adaptada com pausas.</speak>"
-  },
-  "94": {
-    "pergunta": "Pergunta 94 do Breve Catecismo de Westminster.",
-    "resposta_fiel": "Resposta fiel da pergunta 94, conforme o texto clássico do catecismo.",
-    "resposta_alexa": "Resposta adaptada para Alexa da pergunta 94.",
-    "resposta_ssml": "<speak>Pergunta 94. <break time='500ms'/> Resposta adaptada com pausas.</speak>"
-  },
-  "95": {
-    "pergunta": "Pergunta 95 do Breve Catecismo de Westminster.",
-    "resposta_fiel": "Resposta fiel da pergunta 95, conforme o texto clássico do catecismo.",
-    "resposta_alexa": "Resposta adaptada para Alexa da pergunta 95.",
-    "resposta_ssml": "<speak>Pergunta 95. <break time='500ms'/> Resposta adaptada com pausas.</speak>"
-  },
-  "96": {
-    "pergunta": "Pergunta 96 do Breve Catecismo de Westminster.",
-    "resposta_fiel": "Resposta fiel da pergunta 96, conforme o texto clássico do catecismo.",
-    "resposta_alexa": "Resposta adaptada para Alexa da pergunta 96.",
-    "resposta_ssml": "<speak>Pergunta 96. <break time='500ms'/> Resposta adaptada com pausas.</speak>"
-  },
-  "97": {
-    "pergunta": "Pergunta 97 do Breve Catecismo de Westminster.",
-    "resposta_fiel": "Resposta fiel da pergunta 97, conforme o texto clássico do catecismo.",
-    "resposta_alexa": "Resposta adaptada para Alexa da pergunta 97.",
-    "resposta_ssml": "<speak>Pergunta 97. <break time='500ms'/> Resposta adaptada com pausas.</speak>"
-  },
-  "98": {
-    "pergunta": "Pergunta 98 do Breve Catecismo de Westminster.",
-    "resposta_fiel": "Resposta fiel da pergunta 98, conforme o texto clássico do catecismo.",
-    "resposta_alexa": "Resposta adaptada para Alexa da pergunta 98.",
-    "resposta_ssml": "<speak>Pergunta 98. <break time='500ms'/> Resposta adaptada com pausas.</speak>"
-  },
-  "99": {
-    "pergunta": "Pergunta 99 do Breve Catecismo de Westminster.",
-    "resposta_fiel": "Resposta fiel da pergunta 99, conforme o texto clássico do catecismo.",
-    "resposta_alexa": "Resposta adaptada para Alexa da pergunta 99.",
-    "resposta_ssml": "<speak>Pergunta 99. <break time='500ms'/> Resposta adaptada com pausas.</speak>"
-  },
-  "100": {
-    "pergunta": "Pergunta 100 do Breve Catecismo de Westminster.",
-    "resposta_fiel": "Resposta fiel da pergunta 100, conforme o texto clássico do catecismo.",
-    "resposta_alexa": "Resposta adaptada para Alexa da pergunta 100.",
-    "resposta_ssml": "<speak>Pergunta 100. <break time='500ms'/> Resposta adaptada com pausas.</speak>"
-  },
-  "101": {
-    "pergunta": "Pergunta 101 do Breve Catecismo de Westminster.",
-    "resposta_fiel": "Resposta fiel da pergunta 101, conforme o texto clássico do catecismo.",
-    "resposta_alexa": "Resposta adaptada para Alexa da pergunta 101.",
-    "resposta_ssml": "<speak>Pergunta 101. <break time='500ms'/> Resposta adaptada com pausas.</speak>"
-  },
-  "102": {
-    "pergunta": "Pergunta 102 do Breve Catecismo de Westminster.",
-    "resposta_fiel": "Resposta fiel da pergunta 102, conforme o texto clássico do catecismo.",
-    "resposta_alexa": "Resposta adaptada para Alexa da pergunta 102.",
-    "resposta_ssml": "<speak>Pergunta 102. <break time='500ms'/> Resposta adaptada com pausas.</speak>"
-  },
-  "103": {
-    "pergunta": "Pergunta 103 do Breve Catecismo de Westminster.",
-    "resposta_fiel": "Resposta fiel da pergunta 103, conforme o texto clássico do catecismo.",
-    "resposta_alexa": "Resposta adaptada para Alexa da pergunta 103.",
-    "resposta_ssml": "<speak>Pergunta 103. <break time='500ms'/> Resposta adaptada com pausas.</speak>"
-  },
-  "104": {
-    "pergunta": "Pergunta 104 do Breve Catecismo de Westminster.",
-    "resposta_fiel": "Resposta fiel da pergunta 104, conforme o texto clássico do catecismo.",
-    "resposta_alexa": "Resposta adaptada para Alexa da pergunta 104.",
-    "resposta_ssml": "<speak>Pergunta 104. <break time='500ms'/> Resposta adaptada com pausas.</speak>"
-  },
-  "105": {
-    "pergunta": "Pergunta 105 do Breve Catecismo de Westminster.",
-    "resposta_fiel": "Resposta fiel da pergunta 105, conforme o texto clássico do catecismo.",
-    "resposta_alexa": "Resposta adaptada para Alexa da pergunta 105.",
-    "resposta_ssml": "<speak>Pergunta 105. <break time='500ms'/> Resposta adaptada com pausas.</speak>"
-  },
-  "106": {
-    "pergunta": "Pergunta 106 do Breve Catecismo de Westminster.",
-    "resposta_fiel": "Resposta fiel da pergunta 106, conforme o texto clássico do catecismo.",
-    "resposta_alexa": "Resposta adaptada para Alexa da pergunta 106.",
-    "resposta_ssml": "<speak>Pergunta 106. <break time='500ms'/> Resposta adaptada com pausas.</speak>"
-  },
-  "107": {
-    "pergunta": "Pergunta 107 do Breve Catecismo de Westminster.",
-    "resposta_fiel": "Resposta fiel da pergunta 107, conforme o texto clássico do catecismo.",
-    "resposta_alexa": "Resposta adaptada para Alexa da pergunta 107.",
-    "resposta_ssml": "<speak>Pergunta 107. <break time='500ms'/> Resposta adaptada com pausas.</speak>"
-  }
+    "pergunta": "Qual foi o pecado pelo qual nossos primeiros pais caíram?",
+    "resposta_fiel": "O pecado pelo qual nossos primeiros pais caíram foi o de comerem do fruto proibido.",
+    "resposta_alexa": "O pecado foi comer do fruto que Deus havia proibido.",
+    "resposta_ssml": "<speak>Pergunta 15. <break time='400ms'/> O pecado foi comer do fruto <break time='300ms'/> que Deus havia proibido.</speak>"
+  },
+"16": {
+  "pergunta": "Caiu todo o gênero humano pela primeira transgressão de Adão?",
+  "resposta_fiel": "O pacto sendo feito com Adão, não somente para ele, mas para a sua posteridade, todo o gênero humano, descendendo dele por geração ordinária, pecou nele e caiu com ele na sua primeira transgressão.",
+  "resposta_alexa": "Sim, toda a humanidade caiu com Adão, pois ele representava todos nós.",
+  "resposta_ssml": "<speak>Pergunta 16. <break time='400ms'/> Toda a humanidade caiu com Adão <break time='300ms'/> pois ele representava todos nós.</speak>"
+},
+"17": {
+  "pergunta": "Em que estado caiu o homem?",
+  "resposta_fiel": "A queda levou o homem a um estado de pecado e miséria.",
+  "resposta_alexa": "O homem caiu em um estado de pecado e miséria.",
+  "resposta_ssml": "<speak>Pergunta 17. <break time='400ms'/> O homem caiu em um estado <break time='300ms'/> de pecado e miséria.</speak>"
+},
+"18": {
+  "pergunta": "Em que consiste o estado de pecado em que o homem caiu?",
+  "resposta_fiel": "Consiste na culpa do primeiro pecado de Adão, na falta de justiça original e na corrupção de toda a sua natureza.",
+  "resposta_alexa": "O estado de pecado inclui culpa, perda da justiça original e corrupção da natureza humana.",
+  "resposta_ssml": "<speak>Pergunta 18. <break time='400ms'/> O estado de pecado inclui culpa <break time='300ms'/> perda da justiça original <break time='300ms'/> e corrupção da natureza humana.</speak>"
+},
+"19": {
+  "pergunta": "Qual é a miséria do estado em que o homem caiu?",
+  "resposta_fiel": "Todo o gênero humano perdeu a comunhão com Deus, está debaixo da sua ira e maldição.",
+  "resposta_alexa": "A humanidade perdeu a comunhão com Deus e ficou sob sua ira.",
+  "resposta_ssml": "<speak>Pergunta 19. <break time='400ms'/> A humanidade perdeu a comunhão com Deus <break time='300ms'/> e ficou sob sua ira.</speak>"
+},
+"20": {
+  "pergunta": "Deixou Deus todo o gênero humano perecer no estado de pecado e miséria?",
+  "resposta_fiel": "Deus, por sua mera boa vontade, desde toda a eternidade, elegeu alguns para a vida eterna.",
+  "resposta_alexa": "Não. Deus, por graça, escolheu salvar alguns para a vida eterna.",
+  "resposta_ssml": "<speak>Pergunta 20. <break time='400ms'/> Não. Deus escolheu salvar alguns <break time='300ms'/> por sua graça.</speak>"
+},
+"21": {
+  "pergunta": "Quem é o Redentor dos eleitos de Deus?",
+  "resposta_fiel": "O único Redentor dos eleitos de Deus é o Senhor Jesus Cristo.",
+  "resposta_alexa": "O único Redentor é Jesus Cristo.",
+  "resposta_ssml": "<speak>Pergunta 21. <break time='400ms'/> O único Redentor <break time='300ms'/> é Jesus Cristo.</speak>"
+},
+"22": {
+  "pergunta": "Como Cristo, sendo Filho de Deus, se fez homem?",
+  "resposta_fiel": "Cristo tomou para si um verdadeiro corpo e uma alma racional.",
+  "resposta_alexa": "Cristo se fez homem, assumindo um corpo e uma alma humana.",
+  "resposta_ssml": "<speak>Pergunta 22. <break time='400ms'/> Cristo se fez homem <break time='300ms'/> assumindo corpo e alma.</speak>"
+},
+"23": {
+  "pergunta": "Que ofícios Cristo exerce como nosso Redentor?",
+  "resposta_fiel": "Cristo exerce os ofícios de profeta, sacerdote e rei.",
+  "resposta_alexa": "Cristo é nosso profeta, sacerdote e rei.",
+  "resposta_ssml": "<speak>Pergunta 23. <break time='400ms'/> Cristo é nosso profeta <break time='300ms'/> sacerdote <break time='300ms'/> e rei.</speak>"
+},
+"24": {
+  "pergunta": "Como Cristo exerce o ofício de profeta?",
+  "resposta_fiel": "Revelando-nos pela sua Palavra e Espírito a vontade de Deus.",
+  "resposta_alexa": "Cristo revela a vontade de Deus por meio da sua Palavra e do Espírito.",
+  "resposta_ssml": "<speak>Pergunta 24. <break time='400ms'/> Cristo revela a vontade de Deus <break time='300ms'/> por sua Palavra e Espírito.</speak>"
+},
+"25": {
+  "pergunta": "Como Cristo exerce o ofício de sacerdote?",
+  "resposta_fiel": "Oferecendo-se a si mesmo em sacrifício para satisfazer a justiça divina.",
+  "resposta_alexa": "Cristo se ofereceu como sacrifício para nos salvar.",
+  "resposta_ssml": "<speak>Pergunta 25. <break time='400ms'/> Cristo se ofereceu como sacrifício <break time='300ms'/> para nos salvar.</speak>"
+},
+"26": {
+  "pergunta": "Como Cristo exerce o ofício de rei?",
+  "resposta_fiel": "Sujeitando-nos a si e governando-nos.",
+  "resposta_alexa": "Cristo nos governa e nos conduz.",
+  "resposta_ssml": "<speak>Pergunta 26. <break time='400ms'/> Cristo nos governa <break time='300ms'/> e nos conduz.</speak>"
+},
+"27": {
+  "pergunta": "Em que consistiu a humilhação de Cristo?",
+  "resposta_fiel": "Consistiu em nascer, sofrer e morrer.",
+  "resposta_alexa": "A humilhação de Cristo inclui seu nascimento, sofrimento e morte.",
+  "resposta_ssml": "<speak>Pergunta 27. <break time='400ms'/> Cristo se humilhou <break time='300ms'/> ao nascer, sofrer e morrer.</speak>"
+},
+"28": {
+  "pergunta": "Em que consiste a exaltação de Cristo?",
+  "resposta_fiel": "Consiste em sua ressurreição, ascensão e glória.",
+  "resposta_alexa": "Cristo foi exaltado ao ressuscitar, subir ao céu e reinar.",
+  "resposta_ssml": "<speak>Pergunta 28. <break time='400ms'/> Cristo foi exaltado <break time='300ms'/> ao ressuscitar e subir ao céu.</speak>"
+},
+"29": {
+  "pergunta": "Como nos tornamos participantes da redenção?",
+  "resposta_fiel": "Pela aplicação eficaz do Espírito Santo.",
+  "resposta_alexa": "Participamos da redenção pela ação do Espírito Santo.",
+  "resposta_ssml": "<speak>Pergunta 29. <break time='400ms'/> Participamos da redenção <break time='300ms'/> pela ação do Espírito Santo.</speak>"
+},
+"30": {
+  "pergunta": "Como o Espírito aplica a redenção?",
+  "resposta_fiel": "Operando fé em nós e unindo-nos a Cristo.",
+  "resposta_alexa": "O Espírito nos une a Cristo por meio da fé.",
+  "resposta_ssml": "<speak>Pergunta 30. <break time='400ms'/> O Espírito nos une a Cristo <break time='300ms'/> por meio da fé.</speak>"
+},
+
+"31": {
+  "pergunta": "Que é vocação eficaz?",
+  "resposta_fiel": "É a obra do Espírito que nos chama para Cristo.",
+  "resposta_alexa": "É quando Deus nos chama eficazmente para Cristo.",
+  "resposta_ssml": "<speak>Pergunta 31. <break time='400ms'/> É quando Deus nos chama <break time='300ms'/> para Cristo.</speak>"
+},
+"32": {
+  "pergunta": "Que benefícios recebem os chamados?",
+  "resposta_fiel": "Justificação, adoção e santificação.",
+  "resposta_alexa": "Recebem justificação, adoção e santificação.",
+  "resposta_ssml": "<speak>Pergunta 32. <break time='400ms'/> Recebem justificação <break time='300ms'/> adoção <break time='300ms'/> e santificação.</speak>"
+},
+"33": {
+  "pergunta": "Que é justificação?",
+  "resposta_fiel": "É o ato de Deus de perdoar e aceitar como justos.",
+  "resposta_alexa": "Justificação é quando Deus perdoa e nos declara justos.",
+  "resposta_ssml": "<speak>Pergunta 33. <break time='400ms'/> Justificação é quando Deus nos perdoa <break time='300ms'/> e nos declara justos.</speak>"
+},
+"34": {
+  "pergunta": "Que é adoção?",
+  "resposta_fiel": "É o ato de Deus que nos torna seus filhos.",
+  "resposta_alexa": "Adoção é quando Deus nos recebe como seus filhos.",
+  "resposta_ssml": "<speak>Pergunta 34. <break time='400ms'/> Adoção é quando Deus nos recebe <break time='300ms'/> como seus filhos.</speak>"
+},
+"35": {
+  "pergunta": "Que é santificação?",
+  "resposta_fiel": "É a obra pela qual somos renovados à imagem de Deus.",
+  "resposta_alexa": "Santificação é o processo de sermos transformados à imagem de Deus.",
+  "resposta_ssml": "<speak>Pergunta 35. <break time='400ms'/> Santificação é sermos transformados <break time='300ms'/> à imagem de Deus.</speak>"
+},
+"36": {
+  "pergunta": "Que benefícios acompanham a salvação?",
+  "resposta_fiel": "Certeza do amor de Deus, paz de consciência e alegria.",
+  "resposta_alexa": "Incluem paz, alegria e segurança em Deus.",
+  "resposta_ssml": "<speak>Pergunta 36. <break time='400ms'/> Incluem paz <break time='300ms'/> alegria <break time='300ms'/> e segurança em Deus.</speak>"
+},
+"37": {
+  "pergunta": "Que benefícios os crentes recebem na morte?",
+  "resposta_fiel": "Suas almas são aperfeiçoadas em santidade.",
+  "resposta_alexa": "Ao morrer, os crentes são aperfeiçoados em santidade.",
+  "resposta_ssml": "<speak>Pergunta 37. <break time='400ms'/> Ao morrer <break time='300ms'/> os crentes são aperfeiçoados.</speak>"
+},
+"38": {
+  "pergunta": "Que benefícios recebem na ressurreição?",
+  "resposta_fiel": "Serão ressuscitados em glória.",
+  "resposta_alexa": "Serão ressuscitados em glória.",
+  "resposta_ssml": "<speak>Pergunta 38. <break time='400ms'/> Serão ressuscitados <break time='300ms'/> em glória.</speak>"
+},
+"39": {
+  "pergunta": "Qual é o dever que Deus requer do homem?",
+  "resposta_fiel": "Obediência à sua vontade revelada.",
+  "resposta_alexa": "Deus requer que obedeçamos à sua vontade.",
+  "resposta_ssml": "<speak>Pergunta 39. <break time='400ms'/> Deus requer que obedeçamos <break time='300ms'/> à sua vontade.</speak>"
+},
+"40": {
+  "pergunta": "Que regra Deus deu para dirigir essa obediência?",
+  "resposta_fiel": "A lei moral.",
+  "resposta_alexa": "A lei moral.",
+  "resposta_ssml": "<speak>Pergunta 40. <break time='400ms'/> A regra é <break time='300ms'/> a lei moral.</speak>"
+},
+"57": {
+  "pergunta": "Qual é o quarto mandamento?",
+  "resposta_fiel": "Lembra-te do dia de sábado, para o santificar.",
+  "resposta_alexa": "O quarto mandamento nos chama a separar um dia para Deus.",
+  "resposta_ssml": "<speak>Pergunta 57. <break time='400ms'/> Devemos separar um dia <break time='300ms'/> para Deus.</speak>"
+},
+"58": {
+  "pergunta": "Que exige o quarto mandamento?",
+  "resposta_fiel": "Que guardemos santo o dia de descanso.",
+  "resposta_alexa": "Exige dedicar o dia de descanso ao Senhor.",
+  "resposta_ssml": "<speak>Pergunta 58. <break time='400ms'/> Devemos dedicar o dia de descanso <break time='300ms'/> ao Senhor.</speak>"
+},
+"59": {
+  "pergunta": "Qual dia Deus designou?",
+  "resposta_fiel": "Um dia em sete.",
+  "resposta_alexa": "Deus separou um dia em cada sete.",
+  "resposta_ssml": "<speak>Pergunta 59. <break time='400ms'/> Deus separou um dia <break time='300ms'/> em cada sete.</speak>"
+},
+"60": {
+  "pergunta": "Qual é o dia do Senhor?",
+  "resposta_fiel": "O primeiro dia da semana.",
+  "resposta_alexa": "O dia do Senhor é o primeiro dia da semana.",
+  "resposta_ssml": "<speak>Pergunta 60. <break time='400ms'/> O dia do Senhor <break time='300ms'/> é o primeiro dia da semana.</speak>"
+},
+
+"61": {
+  "pergunta": "Qual é o quinto mandamento?",
+  "resposta_fiel": "Honra teu pai e tua mãe.",
+  "resposta_alexa": "Devemos honrar pai e mãe.",
+  "resposta_ssml": "<speak>Pergunta 61. <break time='400ms'/> Devemos honrar <break time='300ms'/> pai e mãe.</speak>"
+},
+"62": {
+  "pergunta": "Que exige o quinto mandamento?",
+  "resposta_fiel": "Respeito às autoridades.",
+  "resposta_alexa": "Devemos respeitar as autoridades.",
+  "resposta_ssml": "<speak>Pergunta 62. <break time='400ms'/> Devemos respeitar <break time='300ms'/> as autoridades.</speak>"
+},
+"63": {
+  "pergunta": "Qual é o sexto mandamento?",
+  "resposta_fiel": "Não matarás.",
+  "resposta_alexa": "Não devemos tirar a vida injustamente.",
+  "resposta_ssml": "<speak>Pergunta 63. <break time='400ms'/> Não devemos tirar a vida <break time='300ms'/> injustamente.</speak>"
+},
+"64": {
+  "pergunta": "Qual é o sétimo mandamento?",
+  "resposta_fiel": "Não adulterarás.",
+  "resposta_alexa": "Devemos viver em pureza.",
+  "resposta_ssml": "<speak>Pergunta 64. <break time='400ms'/> Devemos viver <break time='300ms'/> em pureza.</speak>"
+},
+"65": {
+  "pergunta": "Qual é o oitavo mandamento?",
+  "resposta_fiel": "Não furtarás.",
+  "resposta_alexa": "Não devemos roubar.",
+  "resposta_ssml": "<speak>Pergunta 65. <break time='400ms'/> Não devemos roubar.</speak>"
+},
+"66": {
+  "pergunta": "Qual é o nono mandamento?",
+  "resposta_fiel": "Não dirás falso testemunho.",
+  "resposta_alexa": "Devemos falar a verdade.",
+  "resposta_ssml": "<speak>Pergunta 66. <break time='400ms'/> Devemos falar <break time='300ms'/> a verdade.</speak>"
+},
+"67": {
+  "pergunta": "Qual é o décimo mandamento?",
+  "resposta_fiel": "Não cobiçarás.",
+  "resposta_alexa": "Devemos estar contentes e não cobiçar.",
+  "resposta_ssml": "<speak>Pergunta 67. <break time='400ms'/> Devemos estar contentes <break time='300ms'/> e não cobiçar.</speak>"
+},
+
+"68": {
+  "pergunta": "Pode alguém guardar perfeitamente a lei?",
+  "resposta_fiel": "Nenhum homem pode.",
+  "resposta_alexa": "Ninguém consegue obedecer perfeitamente à lei.",
+  "resposta_ssml": "<speak>Pergunta 68. <break time='400ms'/> Ninguém consegue obedecer <break time='300ms'/> perfeitamente à lei.</speak>"
+},
+"69": {
+  "pergunta": "Todo pecado merece castigo?",
+  "resposta_fiel": "Sim, merece.",
+  "resposta_alexa": "Todo pecado merece castigo.",
+  "resposta_ssml": "<speak>Pergunta 69. <break time='400ms'/> Todo pecado <break time='300ms'/> merece castigo.</speak>"
+},
+"70": {
+  "pergunta": "Como escapar do castigo?",
+  "resposta_fiel": "Por meio de Cristo.",
+  "resposta_alexa": "Escapamos do castigo por meio de Cristo.",
+  "resposta_ssml": "<speak>Pergunta 70. <break time='400ms'/> Escapamos do castigo <break time='300ms'/> por meio de Cristo.</speak>"
+},
+
+"71": {
+  "pergunta": "Que é fé em Cristo?",
+  "resposta_fiel": "Recebê-lo como Salvador.",
+  "resposta_alexa": "Fé é confiar em Cristo como Salvador.",
+  "resposta_ssml": "<speak>Pergunta 71. <break time='400ms'/> Fé é confiar em Cristo <break time='300ms'/> como Salvador.</speak>"
+},
+"72": {
+  "pergunta": "Que é arrependimento?",
+  "resposta_fiel": "Tristeza pelo pecado e abandono dele.",
+  "resposta_alexa": "Arrependimento é reconhecer o pecado e abandoná-lo.",
+  "resposta_ssml": "<speak>Pergunta 72. <break time='400ms'/> Arrependimento é reconhecer o pecado <break time='300ms'/> e abandoná-lo.</speak>"
+},
+
+"73": {
+  "pergunta": "Quais são os meios de graça?",
+  "resposta_fiel": "Palavra, sacramentos e oração.",
+  "resposta_alexa": "São a Palavra, os sacramentos e a oração.",
+  "resposta_ssml": "<speak>Pergunta 73. <break time='400ms'/> São a Palavra <break time='300ms'/> os sacramentos <break time='300ms'/> e a oração.</speak>"
+},
+"74": {
+  "pergunta": "Como a Palavra é eficaz?",
+  "resposta_fiel": "Pelo Espírito.",
+  "resposta_alexa": "A Palavra é eficaz pela ação do Espírito.",
+  "resposta_ssml": "<speak>Pergunta 74. <break time='400ms'/> A Palavra é eficaz <break time='300ms'/> pela ação do Espírito.</speak>"
+},
+"75": {
+  "pergunta": "Que são os sacramentos?",
+  "resposta_fiel": "Sinais visíveis da graça.",
+  "resposta_alexa": "São sinais visíveis da graça de Deus.",
+  "resposta_ssml": "<speak>Pergunta 75. <break time='400ms'/> São sinais visíveis <break time='300ms'/> da graça de Deus.</speak>"
+},
+
+"76": {
+  "pergunta": "Quais são os sacramentos?",
+  "resposta_fiel": "Batismo e Ceia do Senhor.",
+  "resposta_alexa": "São o batismo e a ceia do Senhor.",
+  "resposta_ssml": "<speak>Pergunta 76. <break time='400ms'/> São o batismo <break time='300ms'/> e a ceia do Senhor.</speak>"
+},
+"77": {
+  "pergunta": "Que é o batismo?",
+  "resposta_fiel": "Sinal de entrada na igreja.",
+  "resposta_alexa": "O batismo é o sinal de entrada na fé.",
+  "resposta_ssml": "<speak>Pergunta 77. <break time='400ms'/> O batismo é o sinal <break time='300ms'/> de entrada na fé.</speak>"
+},
+"78": {
+  "pergunta": "Que é a Ceia do Senhor?",
+  "resposta_fiel": "Memorial do sacrifício de Cristo.",
+  "resposta_alexa": "A ceia relembra o sacrifício de Cristo.",
+  "resposta_ssml": "<speak>Pergunta 78. <break time='400ms'/> A ceia relembra <break time='300ms'/> o sacrifício de Cristo.</speak>"
+},
+
+"79": {
+  "pergunta": "Quem deve participar da Ceia?",
+  "resposta_fiel": "Os que creem.",
+  "resposta_alexa": "Devem participar os que creem em Cristo.",
+  "resposta_ssml": "<speak>Pergunta 79. <break time='400ms'/> Devem participar <break time='300ms'/> os que creem.</speak>"
+},
+
+"80": {
+  "pergunta": "Que é oração?",
+  "resposta_fiel": "Apresentar nossos desejos a Deus.",
+  "resposta_alexa": "Oração é falar com Deus.",
+  "resposta_ssml": "<speak>Pergunta 80. <break time='400ms'/> Oração é falar <break time='300ms'/> com Deus.</speak>"
+},
+"81": {
+  "pergunta": "Em nome de quem oramos?",
+  "resposta_fiel": "Em nome de Cristo.",
+  "resposta_alexa": "Oramos em nome de Jesus.",
+  "resposta_ssml": "<speak>Pergunta 81. <break time='400ms'/> Oramos em nome <break time='300ms'/> de Jesus.</speak>"
+},
+"82": {
+  "pergunta": "Que regra Deus nos deu para oração?",
+  "resposta_fiel": "O Pai Nosso.",
+  "resposta_alexa": "A oração do Pai Nosso.",
+  "resposta_ssml": "<speak>Pergunta 82. <break time='400ms'/> A regra é <break time='300ms'/> o Pai Nosso.</speak>"
+},
+
+"83": {
+  "pergunta": "Que ensina o Pai Nosso?",
+  "resposta_fiel": "Ensina como orar.",
+  "resposta_alexa": "Ensina como devemos orar.",
+  "resposta_ssml": "<speak>Pergunta 83. <break time='400ms'/> Ensina como devemos orar.</speak>"
+},
+
+"84": {
+  "pergunta": "Qual é a primeira petição?",
+  "resposta_fiel": "Santificado seja o teu nome.",
+  "resposta_alexa": "Que o nome de Deus seja santificado.",
+  "resposta_ssml": "<speak>Pergunta 84. <break time='400ms'/> Que o nome de Deus <break time='300ms'/> seja santificado.</speak>"
+},
+"85": {
+  "pergunta": "Qual é a segunda petição?",
+  "resposta_fiel": "Venha o teu reino.",
+  "resposta_alexa": "Que o reino de Deus venha.",
+  "resposta_ssml": "<speak>Pergunta 85. <break time='400ms'/> Que o reino de Deus venha.</speak>"
+},
+"86": {
+  "pergunta": "Qual é a terceira petição?",
+  "resposta_fiel": "Seja feita a tua vontade.",
+  "resposta_alexa": "Que a vontade de Deus seja feita.",
+  "resposta_ssml": "<speak>Pergunta 86. <break time='400ms'/> Que a vontade de Deus <break time='300ms'/> seja feita.</speak>"
+},
+"87": {
+  "pergunta": "Qual é a quarta petição?",
+  "resposta_fiel": "O pão nosso de cada dia nos dá hoje.",
+  "resposta_alexa": "Pedimos o sustento diário.",
+  "resposta_ssml": "<speak>Pergunta 87. <break time='400ms'/> Pedimos o sustento <break time='300ms'/> diário.</speak>"
+},
+"88": {
+  "pergunta": "Qual é a quinta petição?",
+  "resposta_fiel": "Perdoa-nos as nossas dívidas.",
+  "resposta_alexa": "Pedimos perdão a Deus.",
+  "resposta_ssml": "<speak>Pergunta 88. <break time='400ms'/> Pedimos perdão <break time='300ms'/> a Deus.</speak>"
+},
+"89": {
+  "pergunta": "Qual é a sexta petição?",
+  "resposta_fiel": "Não nos deixes cair em tentação.",
+  "resposta_alexa": "Pedimos proteção contra o pecado.",
+  "resposta_ssml": "<speak>Pergunta 89. <break time='400ms'/> Pedimos proteção <break time='300ms'/> contra o pecado.</speak>"
+},
+"90": {
+  "pergunta": "Qual é a conclusão da oração?",
+  "resposta_fiel": "Teu é o reino, o poder e a glória.",
+  "resposta_alexa": "Reconhecemos que tudo pertence a Deus.",
+  "resposta_ssml": "<speak>Pergunta 90. <break time='400ms'/> Reconhecemos que tudo <break time='300ms'/> pertence a Deus.</speak>"
+},
+"91": {
+  "pergunta": "Como os sacramentos se tornam meios eficazes de salvação?",
+  "resposta_fiel": "Não por qualquer virtude neles, mas pela bênção de Cristo e pela operação do seu Espírito.",
+  "resposta_alexa": "Os sacramentos são eficazes pela bênção de Cristo e pela ação do Espírito Santo.",
+  "resposta_ssml": "<speak>Pergunta 91. <break time='400ms'/> Os sacramentos são eficazes <break time='300ms'/> pela bênção de Cristo <break time='300ms'/> e pela ação do Espírito.</speak>"
+},
+"92": {
+  "pergunta": "Que é um sacramento?",
+  "resposta_fiel": "Um sacramento é uma santa ordenança instituída por Cristo.",
+  "resposta_alexa": "Sacramento é uma ordenança instituída por Cristo.",
+  "resposta_ssml": "<speak>Pergunta 92. <break time='400ms'/> Sacramento é uma ordenança <break time='300ms'/> instituída por Cristo.</speak>"
+},
+"93": {
+  "pergunta": "Quais são os sacramentos do Novo Testamento?",
+  "resposta_fiel": "Batismo e Ceia do Senhor.",
+  "resposta_alexa": "Os sacramentos são o batismo e a ceia do Senhor.",
+  "resposta_ssml": "<speak>Pergunta 93. <break time='400ms'/> Os sacramentos são <break time='300ms'/> o batismo <break time='300ms'/> e a ceia do Senhor.</speak>"
+},
+"94": {
+  "pergunta": "Que é o batismo?",
+  "resposta_fiel": "É um sacramento pelo qual somos recebidos na igreja.",
+  "resposta_alexa": "O batismo é o sacramento que nos inclui na igreja.",
+  "resposta_ssml": "<speak>Pergunta 94. <break time='400ms'/> O batismo nos inclui <break time='300ms'/> na igreja.</speak>"
+},
+"95": {
+  "pergunta": "A quem deve ser administrado o batismo?",
+  "resposta_fiel": "Aos que professam fé e aos seus filhos.",
+  "resposta_alexa": "Deve ser administrado aos crentes e aos seus filhos.",
+  "resposta_ssml": "<speak>Pergunta 95. <break time='400ms'/> Deve ser administrado aos crentes <break time='300ms'/> e aos seus filhos.</speak>"
+},
+"96": {
+  "pergunta": "Que é a Ceia do Senhor?",
+  "resposta_fiel": "É um sacramento no qual se recorda a morte de Cristo.",
+  "resposta_alexa": "A ceia do Senhor é um memorial da morte de Cristo.",
+  "resposta_ssml": "<speak>Pergunta 96. <break time='400ms'/> A ceia do Senhor relembra <break time='300ms'/> a morte de Cristo.</speak>"
+},
+"97": {
+  "pergunta": "Que se requer para participar dignamente da Ceia?",
+  "resposta_fiel": "Exame próprio, fé e arrependimento.",
+  "resposta_alexa": "Devemos examinar a nós mesmos, ter fé e arrependimento.",
+  "resposta_ssml": "<speak>Pergunta 97. <break time='400ms'/> Devemos nos examinar <break time='300ms'/> com fé e arrependimento.</speak>"
+},
+"98": {
+  "pergunta": "Que é oração?",
+  "resposta_fiel": "Oferecer a Deus os nossos desejos.",
+  "resposta_alexa": "Oração é apresentar nossos pedidos a Deus.",
+  "resposta_ssml": "<speak>Pergunta 98. <break time='400ms'/> Oração é apresentar <break time='300ms'/> nossos pedidos a Deus.</speak>"
+},
+"99": {
+  "pergunta": "Que regra Deus deu para oração?",
+  "resposta_fiel": "Toda a Palavra de Deus é útil, especialmente o Pai Nosso.",
+  "resposta_alexa": "A Palavra de Deus nos ensina a orar, especialmente o Pai Nosso.",
+  "resposta_ssml": "<speak>Pergunta 99. <break time='400ms'/> A Palavra de Deus nos ensina a orar <break time='300ms'/> especialmente o Pai Nosso.</speak>"
+},
+"100": {
+  "pergunta": "Que nos ensina o prefácio do Pai Nosso?",
+  "resposta_fiel": "Que devemos nos aproximar de Deus com reverência.",
+  "resposta_alexa": "Devemos nos aproximar de Deus com reverência e confiança.",
+  "resposta_ssml": "<speak>Pergunta 100. <break time='400ms'/> Devemos nos aproximar de Deus <break time='300ms'/> com reverência e confiança.</speak>"
+},
+"101": {
+  "pergunta": "Que pedimos na primeira petição?",
+  "resposta_fiel": "Que o nome de Deus seja santificado.",
+  "resposta_alexa": "Pedimos que o nome de Deus seja honrado.",
+  "resposta_ssml": "<speak>Pergunta 101. <break time='400ms'/> Pedimos que o nome de Deus <break time='300ms'/> seja honrado.</speak>"
+},
+"102": {
+  "pergunta": "Que pedimos na segunda petição?",
+  "resposta_fiel": "Que venha o reino de Deus.",
+  "resposta_alexa": "Pedimos que o reino de Deus venha.",
+  "resposta_ssml": "<speak>Pergunta 102. <break time='400ms'/> Pedimos que o reino de Deus venha.</speak>"
+},
+"103": {
+  "pergunta": "Que pedimos na terceira petição?",
+  "resposta_fiel": "Que a vontade de Deus seja feita.",
+  "resposta_alexa": "Pedimos que a vontade de Deus seja feita.",
+  "resposta_ssml": "<speak>Pergunta 103. <break time='400ms'/> Pedimos que a vontade de Deus <break time='300ms'/> seja feita.</speak>"
+},
+"104": {
+  "pergunta": "Que pedimos na quarta petição?",
+  "resposta_fiel": "O sustento diário.",
+  "resposta_alexa": "Pedimos o sustento de cada dia.",
+  "resposta_ssml": "<speak>Pergunta 104. <break time='400ms'/> Pedimos o sustento <break time='300ms'/> de cada dia.</speak>"
+},
+"105": {
+  "pergunta": "Que pedimos na quinta petição?",
+  "resposta_fiel": "Perdão dos pecados.",
+  "resposta_alexa": "Pedimos perdão pelos nossos pecados.",
+  "resposta_ssml": "<speak>Pergunta 105. <break time='400ms'/> Pedimos perdão <break time='300ms'/> pelos nossos pecados.</speak>"
+},
+"106": {
+  "pergunta": "Que pedimos na sexta petição?",
+  "resposta_fiel": "Livramento da tentação.",
+  "resposta_alexa": "Pedimos proteção contra a tentação.",
+  "resposta_ssml": "<speak>Pergunta 106. <break time='400ms'/> Pedimos proteção <break time='300ms'/> contra a tentação.</speak>"
+},
+"107": {
+  "pergunta": "Que nos ensina a conclusão do Pai Nosso?",
+  "resposta_fiel": "Que o reino, poder e glória pertencem a Deus.",
+  "resposta_alexa": "Reconhecemos que o reino, o poder e a glória pertencem a Deus.",
+  "resposta_ssml": "<speak>Pergunta 107. <break time='400ms'/> Reconhecemos que o reino <break time='300ms'/> o poder <break time='300ms'/> e a glória pertencem a Deus.</speak>"
 }
