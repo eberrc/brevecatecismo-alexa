@@ -1,14 +1,22 @@
 const express = require('express');
 const Alexa = require('ask-sdk-core');
 const fs = require('fs');
+const path = require('path');
 
-// ✅ Carregar JSON SEM cache
+// ================= JSON (CORRETO 100%) =================
+
+// Caminho absoluto do arquivo
+const filePath = path.join(__dirname, 'brevecatecismo.json');
+
+// Ler arquivo SEM cache
 const catecismo = JSON.parse(
-  fs.readFileSync('./brevecatecismo.json', 'utf8')
+  fs.readFileSync(filePath, 'utf8')
 );
 
-// 🔍 LOG DE GARANTIA
-console.log("✅ JSON carregado com", Object.keys(catecismo).length, "perguntas");
+// 🔍 LOGS DE GARANTIA
+console.log("📂 Caminho do JSON:", filePath);
+console.log("📂 Arquivos na pasta:", fs.readdirSync(__dirname));
+console.log("✅ Total de perguntas:", Object.keys(catecismo).length);
 console.log("🔎 TESTE PERGUNTA 10:", catecismo["10"]);
 
 // ================= SERVIDOR =================
@@ -42,7 +50,8 @@ const LaunchRequestHandler = {
       .speak(`<speak>
         Bem-vindo ao catecismo.
         <break time="400ms"/>
-        Você pode dizer: pergunta 1,
+        Você pode dizer:
+        pergunta 1,
         próxima pergunta,
         pergunta aleatória,
         ou iniciar quiz.
@@ -201,7 +210,7 @@ const HelpIntentHandler = {
   }
 };
 
-// Sair
+// Cancelar / Sair
 const CancelHandler = {
   canHandle(h) {
     return ['AMAZON.StopIntent','AMAZON.CancelIntent'].includes(
@@ -209,13 +218,17 @@ const CancelHandler = {
     );
   },
   handle(h) {
-    return h.responseBuilder.speak('Até logo!').getResponse();
+    return h.responseBuilder
+      .speak('Até logo!')
+      .getResponse();
   }
 };
 
-// Erro
+// Erro global
 const ErrorHandler = {
-  canHandle() { return true; },
+  canHandle() {
+    return true;
+  },
   handle(h, err) {
     console.log("❌ ERRO:", err);
     return h.responseBuilder
@@ -249,4 +262,7 @@ app.post('/', async (req, res) => {
 });
 
 const PORT = process.env.PORT || 3000;
-app.listen(PORT, () => console.log('🚀 Rodando na porta ' + PORT));
+
+app.listen(PORT, () => {
+  console.log('🚀 Servidor rodando na porta ' + PORT);
+});
