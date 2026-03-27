@@ -1,37 +1,23 @@
-const express = require('express');
 const Alexa = require('ask-sdk-core');
 const fs = require('fs');
-const path = require('path');
 
-// ================= JSON (CORRETO 100%) =================
+// ================= CARREGAR JSON =================
 
-// Caminho absoluto do arquivo
-const filePath = path.join(__dirname, 'brevecatecismo.json');
+let catecismo = {};
 
-// Ler arquivo SEM cache
-const catecismo = JSON.parse(
-  fs.readFileSync(filePath, 'utf8')
-);
-
-// 🔍 LOGS DE GARANTIA
-console.log("📂 Caminho do JSON:", filePath);
-console.log("📂 Arquivos na pasta:", fs.readdirSync(__dirname));
-console.log("✅ Total de perguntas:", Object.keys(catecismo).length);
-console.log("🔎 TESTE PERGUNTA 10:", catecismo["10"]);
-
-// ================= SERVIDOR =================
-
-const app = express();
-app.use(express.json());
+try {
+  const data = fs.readFileSync('./brevecatecismo.json', 'utf8');
+  catecismo = JSON.parse(data);
+  console.log("✅ JSON carregado com sucesso");
+} catch (err) {
+  console.log("❌ Erro ao carregar JSON:", err);
+}
 
 // ================= FUNÇÕES =================
 
 function falarResposta(numero, item) {
-  return item.resposta_ssml || `<speak>
-    Pergunta ${numero}.
-    <break time="400ms"/>
-    ${item.resposta_alexa}
-  </speak>`;
+  // 🔥 TESTE: forçando falar a PERGUNTA
+  return `<speak>${item.pergunta}</speak>`;
 }
 
 function getSession(handlerInput) {
@@ -40,229 +26,163 @@ function getSession(handlerInput) {
 
 // ================= HANDLERS =================
 
-// Abertura
 const LaunchRequestHandler = {
-  canHandle(h) {
-    return Alexa.getRequestType(h.requestEnvelope) === 'LaunchRequest';
+  canHandle(handlerInput) {
+    return Alexa.getRequestType(handlerInput.requestEnvelope) === 'LaunchRequest';
   },
-  handle(h) {
-    return h.responseBuilder
-      .speak(`<speak>
-        Bem-vindo ao catecismo.
-        <break time="400ms"/>
-        Você pode dizer:
-        pergunta 1,
-        próxima pergunta,
-        pergunta aleatória,
-        ou iniciar quiz.
-      </speak>`)
-      .reprompt('Diga um comando.')
+  handle(handlerInput) {
+    const speakOutput = "Bem-vindo ao Breve Catecismo. Você pode pedir um número de pergunta.";
+    return handlerInput.responseBuilder
+      .speak(speakOutput)
+      .reprompt("Diga, por exemplo: pergunta 10.")
       .getResponse();
   }
 };
 
-// Pergunta por número
 const PerguntaNumeroIntentHandler = {
-  canHandle(h) {
-    return Alexa.getIntentName(h.requestEnvelope) === 'PerguntaNumeroIntent';
+  canHandle(handlerInput) {
+    return Alexa.getRequestType(handlerInput.requestEnvelope) === 'IntentRequest'
+      && Alexa.getIntentName(handlerInput.requestEnvelope) === 'PerguntaNumeroIntent';
   },
-  handle(h) {
-    const session = getSession(h);
+  handle(handlerInput) {
+    try {
+      const numero = handlerInput.requestEnvelope.request.intent.slots.numero.value;
 
-    const numero = h.requestEnvelope.request.intent.slots?.numero?.value;
+      console.log("📥 Número recebido:", numero);
 
-    if (!numero || !catecismo[numero]) {
-      return h.responseBuilder
-        .speak('Não entendi o número.')
-        .reprompt('Diga: pergunta 1.')
+      const item = catecismo[numero];
+
+      if (!item) {
+        return handlerInput.responseBuilder
+          .speak("Não encontrei essa pergunta.")
+          .reprompt("Tente outro número.")
+          .getResponse();
+      }
+
+      const fala = falarResposta(numero, item);
+
+      return handlerInput.responseBuilder
+        .speak(fala)
+        .reprompt("Deseja outra pergunta?")
+        .getResponse();
+
+    } catch (error) {
+      console.log("❌ Erro:", error);
+      return handlerInput.responseBuilder
+        .speak("Desculpe, ocorreu um erro.")
         .getResponse();
     }
-
-    session.ultima = parseInt(numero);
-
-    return h.responseBuilder
-      .speak(falarResposta(numero, catecismo[numero]))
-      .getResponse();
   }
 };
 
-// Próxima pergunta
 const ProximaPerguntaIntentHandler = {
-  canHandle(h) {
-    return Alexa.getIntentName(h.requestEnvelope) === 'ProximaPerguntaIntent';
+  canHandle(handlerInput) {
+    return Alexa.getRequestType(handlerInput.requestEnvelope) === 'IntentRequest'
+      && Alexa.getIntentName(handlerInput.requestEnvelope) === 'ProximaPerguntaIntent';
   },
-  handle(h) {
-    const session = getSession(h);
+  handle(handlerInput) {
+    const session = getSession(handlerInput);
+    let atual = session.numeroAtual || 1;
+    atual++;
 
-    let numero = (session.ultima || 0) + 1;
+    if (!catecismo[atual]) atual = 1;
 
-    if (!catecismo[numero]) {
-      numero = 1;
-    }
+    session.numeroAtual = atual;
+    handlerInput.attributesManager.setSessionAttributes(session);
 
-    session.ultima = numero;
+    const item = catecismo[atual];
+    const fala = falarResposta(atual, item);
 
-    return h.responseBuilder
-      .speak(falarResposta(numero, catecismo[numero]))
+    return handlerInput.responseBuilder
+      .speak(fala)
+      .reprompt("Deseja continuar?")
       .getResponse();
   }
 };
 
-// Pergunta aleatória
 const PerguntaAleatoriaIntentHandler = {
-  canHandle(h) {
-    return Alexa.getIntentName(h.requestEnvelope) === 'PerguntaAleatoriaIntent';
+  canHandle(handlerInput) {
+    return Alexa.getRequestType(handlerInput.requestEnvelope) === 'IntentRequest'
+      && Alexa.getIntentName(handlerInput.requestEnvelope) === 'PerguntaAleatoriaIntent';
   },
-  handle(h) {
-    const session = getSession(h);
+  handle(handlerInput) {
+    const numeros = Object.keys(catecismo);
+    const aleatorio = numeros[Math.floor(Math.random() * numeros.length)];
 
-    const numero = Math.floor(Math.random() * 107) + 1;
-    session.ultima = numero;
+    const item = catecismo[aleatorio];
+    const fala = falarResposta(aleatorio, item);
 
-    return h.responseBuilder
-      .speak(falarResposta(numero, catecismo[numero]))
+    return handlerInput.responseBuilder
+      .speak(fala)
+      .reprompt("Deseja outra?")
       .getResponse();
   }
 };
 
-// Devocional
-const DevocionalIntentHandler = {
-  canHandle(h) {
-    return Alexa.getIntentName(h.requestEnvelope) === 'DevocionalIntent';
-  },
-  handle(h) {
-    const hoje = new Date().getDate();
-    const numero = (hoje % 107) + 1;
-
-    return h.responseBuilder
-      .speak(`<speak>
-        Devocional de hoje.
-        <break time="400ms"/>
-        ${falarResposta(numero, catecismo[numero])}
-      </speak>`)
-      .getResponse();
-  }
-};
-
-// Quiz iniciar
-const IniciarQuizIntentHandler = {
-  canHandle(h) {
-    return Alexa.getIntentName(h.requestEnvelope) === 'IniciarQuizIntent';
-  },
-  handle(h) {
-    const session = getSession(h);
-
-    const numero = Math.floor(Math.random() * 107) + 1;
-    session.quiz = numero;
-
-    return h.responseBuilder
-      .speak(`<speak>
-        Pergunta ${numero}.
-        <break time="400ms"/>
-        ${catecismo[numero].pergunta}
-      </speak>`)
-      .reprompt('Qual é a resposta?')
-      .getResponse();
-  }
-};
-
-// Quiz resposta
-const RespostaQuizIntentHandler = {
-  canHandle(h) {
-    return Alexa.getIntentName(h.requestEnvelope) === 'RespostaQuizIntent';
-  },
-  handle(h) {
-    const session = getSession(h);
-
-    if (!session.quiz) {
-      return h.responseBuilder
-        .speak('Você precisa iniciar um quiz primeiro.')
-        .getResponse();
-    }
-
-    const numero = session.quiz;
-    const correta = catecismo[numero].resposta_alexa;
-
-    session.quiz = null;
-
-    return h.responseBuilder
-      .speak(`<speak>
-        Boa tentativa.
-        <break time="300ms"/>
-        A resposta correta é:
-        <break time="300ms"/>
-        ${correta}
-      </speak>`)
-      .getResponse();
-  }
-};
-
-// Ajuda
 const HelpIntentHandler = {
-  canHandle(h) {
-    return Alexa.getIntentName(h.requestEnvelope) === 'AMAZON.HelpIntent';
+  canHandle(handlerInput) {
+    return Alexa.getRequestType(handlerInput.requestEnvelope) === 'IntentRequest'
+      && Alexa.getIntentName(handlerInput.requestEnvelope) === 'AMAZON.HelpIntent';
   },
-  handle(h) {
-    return h.responseBuilder
-      .speak('Você pode pedir uma pergunta, iniciar quiz ou ouvir o devocional.')
-      .reprompt('O que deseja?')
+  handle(handlerInput) {
+    return handlerInput.responseBuilder
+      .speak("Você pode dizer: pergunta 10, próxima pergunta ou pergunta aleatória.")
+      .reprompt("Como posso ajudar?")
       .getResponse();
   }
 };
 
-// Cancelar / Sair
-const CancelHandler = {
-  canHandle(h) {
-    return ['AMAZON.StopIntent','AMAZON.CancelIntent'].includes(
-      Alexa.getIntentName(h.requestEnvelope)
-    );
+const CancelAndStopIntentHandler = {
+  canHandle(handlerInput) {
+    return Alexa.getRequestType(handlerInput.requestEnvelope) === 'IntentRequest'
+      && (
+        Alexa.getIntentName(handlerInput.requestEnvelope) === 'AMAZON.CancelIntent' ||
+        Alexa.getIntentName(handlerInput.requestEnvelope) === 'AMAZON.StopIntent'
+      );
   },
-  handle(h) {
-    return h.responseBuilder
-      .speak('Até logo!')
+  handle(handlerInput) {
+    return handlerInput.responseBuilder
+      .speak("Até logo!")
       .getResponse();
   }
 };
 
-// Erro global
+const FallbackIntentHandler = {
+  canHandle(handlerInput) {
+    return Alexa.getRequestType(handlerInput.requestEnvelope) === 'IntentRequest'
+      && Alexa.getIntentName(handlerInput.requestEnvelope) === 'AMAZON.FallbackIntent';
+  },
+  handle(handlerInput) {
+    return handlerInput.responseBuilder
+      .speak("Não entendi. Tente dizer: pergunta 10.")
+      .reprompt("Tente novamente.")
+      .getResponse();
+  }
+};
+
 const ErrorHandler = {
   canHandle() {
     return true;
   },
-  handle(h, err) {
-    console.log("❌ ERRO:", err);
-    return h.responseBuilder
-      .speak('Ocorreu um erro.')
+  handle(handlerInput, error) {
+    console.log("❌ Erro capturado:", error);
+    return handlerInput.responseBuilder
+      .speak("Desculpe, ocorreu um erro.")
       .getResponse();
   }
 };
 
-// ================= SKILL =================
+// ================= EXPORT =================
 
-const skill = Alexa.SkillBuilders.custom()
+exports.handler = Alexa.SkillBuilders.custom()
   .addRequestHandlers(
     LaunchRequestHandler,
     PerguntaNumeroIntentHandler,
     ProximaPerguntaIntentHandler,
     PerguntaAleatoriaIntentHandler,
-    DevocionalIntentHandler,
-    IniciarQuizIntentHandler,
-    RespostaQuizIntentHandler,
     HelpIntentHandler,
-    CancelHandler
+    CancelAndStopIntentHandler,
+    FallbackIntentHandler
   )
   .addErrorHandlers(ErrorHandler)
-  .create();
-
-// ================= SERVER =================
-
-app.post('/', async (req, res) => {
-  const response = await skill.invoke(req.body);
-  res.json(response);
-});
-
-const PORT = process.env.PORT || 3000;
-
-app.listen(PORT, () => {
-  console.log('🚀 Servidor rodando na porta ' + PORT);
-});
+  .lambda();
