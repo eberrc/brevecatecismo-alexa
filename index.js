@@ -29,7 +29,16 @@ const PerguntaNumeroIntentHandler = {
       && Alexa.getIntentName(handlerInput.requestEnvelope) === 'PerguntaNumeroIntent';
   },
   handle(handlerInput) {
-    const numero = handlerInput.requestEnvelope.request.intent.slots.numero.value;
+
+    const numero = handlerInput.requestEnvelope.request.intent.slots?.numero?.value;
+
+    // 🛡️ Proteção contra erro
+    if (!numero) {
+      return handlerInput.responseBuilder
+        .speak('Não entendi o número da pergunta. Tente dizer, por exemplo: pergunta 1.')
+        .reprompt('Diga o número da pergunta.')
+        .getResponse();
+    }
 
     const item = catecismo[numero];
 
@@ -41,8 +50,8 @@ const PerguntaNumeroIntentHandler = {
     }
 
     return handlerInput.responseBuilder
-      .speak(item.resposta_ssml) // usa versão com pausas
-      .withSimpleCard(`Pergunta ${numero}`, item.resposta_alexa)
+      .speak(item.resposta_ssml) // usa SSML
+      .withSimpleCard(`Pergunta ${numero}`, item.resposta_alexa || item.resposta_fiel)
       .getResponse();
   }
 };
@@ -85,11 +94,11 @@ const ErrorHandler = {
     return true;
   },
   handle(handlerInput, error) {
-    console.log(error);
+    console.log('Erro capturado:', error);
 
     return handlerInput.responseBuilder
-      .speak('Desculpe, ocorreu um erro.')
-      .reprompt('Tente novamente.')
+      .speak('Desculpe, ocorreu um erro ao buscar a pergunta.')
+      .reprompt('Tente novamente dizendo o número da pergunta.')
       .getResponse();
   }
 };
@@ -109,8 +118,13 @@ const skill = Alexa.SkillBuilders.custom()
 // ================= ENDPOINT =================
 
 app.post('/', async (req, res) => {
-  const response = await skill.invoke(req.body);
-  res.json(response);
+  try {
+    const response = await skill.invoke(req.body);
+    res.json(response);
+  } catch (err) {
+    console.error('Erro geral:', err);
+    res.status(500).send('Erro no servidor');
+  }
 });
 
 // ================= SERVER =================
