@@ -13,10 +13,8 @@ const LaunchRequestHandler = {
     return Alexa.getRequestType(handlerInput.requestEnvelope) === 'LaunchRequest';
   },
   handle(handlerInput) {
-    const speakOutput = 'Bem-vindo ao Catecismo de Westminster. Diga, por exemplo: pergunta 1.';
-
     return handlerInput.responseBuilder
-      .speak(speakOutput)
+      .speak('Bem-vindo ao Catecismo de Westminster. Diga, por exemplo: pergunta 1.')
       .reprompt('Diga o número de uma pergunta.')
       .getResponse();
   }
@@ -28,30 +26,58 @@ const PerguntaNumeroIntentHandler = {
     return Alexa.getRequestType(handlerInput.requestEnvelope) === 'IntentRequest'
       && Alexa.getIntentName(handlerInput.requestEnvelope) === 'PerguntaNumeroIntent';
   },
+
   handle(handlerInput) {
 
-    const numero = handlerInput.requestEnvelope.request.intent.slots?.numero?.value;
+    let numero = handlerInput.requestEnvelope.request.intent.slots?.numero?.value;
 
-    // 🛡️ Proteção contra erro
+    console.log("Número recebido:", numero);
+
+    // Converter texto para número
+    const mapaNumeros = {
+      "um": "1", "uma": "1",
+      "dois": "2",
+      "três": "3", "tres": "3",
+      "quatro": "4",
+      "cinco": "5",
+      "seis": "6",
+      "sete": "7",
+      "oito": "8",
+      "nove": "9",
+      "dez": "10"
+    };
+
+    if (mapaNumeros[numero]) {
+      numero = mapaNumeros[numero];
+    }
+
     if (!numero) {
       return handlerInput.responseBuilder
-        .speak('Não entendi o número da pergunta. Tente dizer, por exemplo: pergunta 1.')
+        .speak('Não entendi o número da pergunta. Diga, por exemplo: pergunta 1.')
         .reprompt('Diga o número da pergunta.')
         .getResponse();
     }
 
     const item = catecismo[numero];
 
+    console.log("Item encontrado:", item);
+
     if (!item) {
       return handlerInput.responseBuilder
-        .speak('Não encontrei essa pergunta. Tente outro número.')
+        .speak(`Não encontrei a pergunta ${numero}. Tente outro número.`)
         .reprompt('Diga outro número de pergunta.')
         .getResponse();
     }
 
+    const resposta =
+      item.resposta_ssml ||
+      item.resposta_alexa ||
+      item.resposta_fiel ||
+      'Não consegui encontrar a resposta.';
+
     return handlerInput.responseBuilder
-      .speak(item.resposta_ssml) // usa SSML
-      .withSimpleCard(`Pergunta ${numero}`, item.resposta_alexa || item.resposta_fiel)
+      .speak(resposta)
+      .withSimpleCard(`Pergunta ${numero}`, item.resposta_alexa || item.resposta_fiel || '')
       .getResponse();
   }
 };
@@ -59,14 +85,11 @@ const PerguntaNumeroIntentHandler = {
 // Ajuda
 const HelpIntentHandler = {
   canHandle(handlerInput) {
-    return Alexa.getRequestType(handlerInput.requestEnvelope) === 'IntentRequest'
-      && Alexa.getIntentName(handlerInput.requestEnvelope) === 'AMAZON.HelpIntent';
+    return Alexa.getIntentName(handlerInput.requestEnvelope) === 'AMAZON.HelpIntent';
   },
   handle(handlerInput) {
-    const speakOutput = 'Você pode dizer: pergunta 1, pergunta 2, e assim por diante.';
-
     return handlerInput.responseBuilder
-      .speak(speakOutput)
+      .speak('Você pode dizer: pergunta 1, pergunta 2, e assim por diante.')
       .reprompt('Diga um número de pergunta.')
       .getResponse();
   }
@@ -75,15 +98,25 @@ const HelpIntentHandler = {
 // Cancelar ou sair
 const CancelAndStopIntentHandler = {
   canHandle(handlerInput) {
-    return Alexa.getRequestType(handlerInput.requestEnvelope) === 'IntentRequest'
-      && (
-        Alexa.getIntentName(handlerInput.requestEnvelope) === 'AMAZON.CancelIntent' ||
-        Alexa.getIntentName(handlerInput.requestEnvelope) === 'AMAZON.StopIntent'
-      );
+    return Alexa.getIntentName(handlerInput.requestEnvelope) === 'AMAZON.CancelIntent'
+      || Alexa.getIntentName(handlerInput.requestEnvelope) === 'AMAZON.StopIntent';
   },
   handle(handlerInput) {
     return handlerInput.responseBuilder
       .speak('Até logo!')
+      .getResponse();
+  }
+};
+
+// Fallback (quando não entende)
+const FallbackIntentHandler = {
+  canHandle(handlerInput) {
+    return Alexa.getIntentName(handlerInput.requestEnvelope) === 'AMAZON.FallbackIntent';
+  },
+  handle(handlerInput) {
+    return handlerInput.responseBuilder
+      .speak('Não entendi. Tente dizer: pergunta 1.')
+      .reprompt('Diga o número da pergunta.')
       .getResponse();
   }
 };
@@ -110,7 +143,8 @@ const skill = Alexa.SkillBuilders.custom()
     LaunchRequestHandler,
     PerguntaNumeroIntentHandler,
     HelpIntentHandler,
-    CancelAndStopIntentHandler
+    CancelAndStopIntentHandler,
+    FallbackIntentHandler
   )
   .addErrorHandlers(ErrorHandler)
   .create();
