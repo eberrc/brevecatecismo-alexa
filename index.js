@@ -5,16 +5,33 @@ const catecismo = require('./brevecatecismo.json');
 const app = express();
 app.use(express.json());
 
+// ================= ESTADO SIMPLES =================
+let ultimaPergunta = 1;
+let perguntaQuiz = null;
+
+// ================= FUNÇÃO AUXILIAR =================
+function montarResposta(numero, item) {
+  const texto =
+    item.resposta_ssml ||
+    `<speak>
+      <p>Pergunta ${numero}.</p>
+      <break time="400ms"/>
+      <p>${item.resposta_alexa || item.resposta_fiel}</p>
+    </speak>`;
+
+  return texto;
+}
+
 // ================= HANDLERS =================
 
-// Quando abre a skill
+// Abertura da skill
 const LaunchRequestHandler = {
   canHandle(handlerInput) {
     return Alexa.getRequestType(handlerInput.requestEnvelope) === 'LaunchRequest';
   },
   handle(handlerInput) {
     return handlerInput.responseBuilder
-      .speak('Bem-vindo ao Catecismo de Westminster. Diga: pergunta 1.')
+      .speak('<speak>Bem-vindo ao catecismo. Diga: pergunta 1.</speak>')
       .reprompt('Diga o número de uma pergunta.')
       .getResponse();
   }
@@ -23,15 +40,12 @@ const LaunchRequestHandler = {
 // Pergunta por número
 const PerguntaNumeroIntentHandler = {
   canHandle(handlerInput) {
-    return Alexa.getRequestType(handlerInput.requestEnvelope) === 'IntentRequest'
-      && Alexa.getIntentName(handlerInput.requestEnvelope) === 'PerguntaNumeroIntent';
+    return Alexa.getIntentName(handlerInput.requestEnvelope) === 'PerguntaNumeroIntent';
   },
-
   handle(handlerInput) {
 
     let numero = handlerInput.requestEnvelope.request.intent.slots?.numero?.value;
 
-    // mapa simples para garantir reconhecimento
     const mapaNumeros = {
       "um": "1", "uma": "1",
       "dois": "2",
@@ -51,7 +65,7 @@ const PerguntaNumeroIntentHandler = {
 
     if (!numero) {
       return handlerInput.responseBuilder
-        .speak('Não entendi o número. Diga, por exemplo: pergunta 1.')
+        .speak('Não entendi o número. Diga: pergunta 1.')
         .reprompt('Diga o número da pergunta.')
         .getResponse();
     }
@@ -65,15 +79,90 @@ const PerguntaNumeroIntentHandler = {
         .getResponse();
     }
 
-    const resposta =
-      item.resposta_ssml ||
-      item.resposta_alexa ||
-      item.resposta_fiel ||
-      'Resposta não disponível.';
+    ultimaPergunta = parseInt(numero);
 
     return handlerInput.responseBuilder
-      .speak(resposta)
-      .withSimpleCard(`Pergunta ${numero}`, item.resposta_alexa || item.resposta_fiel || '')
+      .speak(montarResposta(numero, item))
+      .getResponse();
+  }
+};
+
+// Próxima pergunta
+const ProximaPerguntaIntentHandler = {
+  canHandle(handlerInput) {
+    return Alexa.getIntentName(handlerInput.requestEnvelope) === 'ProximaPerguntaIntent';
+  },
+  handle(handlerInput) {
+
+    ultimaPergunta++;
+
+    const item = catecismo[ultimaPergunta];
+
+    if (!item) {
+      ultimaPergunta = 1;
+      return handlerInput.responseBuilder
+        .speak('<speak>Chegamos ao final. Voltando para a pergunta 1.</speak>')
+        .getResponse();
+    }
+
+    return handlerInput.responseBuilder
+      .speak(montarResposta(ultimaPergunta, item))
+      .getResponse();
+  }
+};
+
+// Pergunta aleatória
+const PerguntaAleatoriaIntentHandler = {
+  canHandle(handlerInput) {
+    return Alexa.getIntentName(handlerInput.requestEnvelope) === 'PerguntaAleatoriaIntent';
+  },
+  handle(handlerInput) {
+
+    const numero = Math.floor(Math.random() * 107) + 1;
+    const item = catecismo[numero];
+
+    ultimaPergunta = numero;
+
+    return handlerInput.responseBuilder
+      .speak(montarResposta(numero, item))
+      .getResponse();
+  }
+};
+
+// Iniciar quiz
+const IniciarQuizIntentHandler = {
+  canHandle(handlerInput) {
+    return Alexa.getIntentName(handlerInput.requestEnvelope) === 'IniciarQuizIntent';
+  },
+  handle(handlerInput) {
+
+    const numero = Math.floor(Math.random() * 107) + 1;
+    perguntaQuiz = numero;
+
+    return handlerInput.responseBuilder
+      .speak(`<speak>Pergunta ${numero}. <break time="400ms"/> ${catecismo[numero].pergunta}</speak>`)
+      .reprompt('Qual é a resposta?')
+      .getResponse();
+  }
+};
+
+// Responder quiz
+const RespostaQuizIntentHandler = {
+  canHandle(handlerInput) {
+    return Alexa.getIntentName(handlerInput.requestEnvelope) === 'RespostaQuizIntent';
+  },
+  handle(handlerInput) {
+
+    if (!perguntaQuiz) {
+      return handlerInput.responseBuilder
+        .speak('Você ainda não iniciou um quiz.')
+        .getResponse();
+    }
+
+    const item = catecismo[perguntaQuiz];
+
+    return handlerInput.responseBuilder
+      .speak(`<speak>Resposta correta. <break time="400ms"/> ${item.resposta_alexa}</speak>`)
       .getResponse();
   }
 };
@@ -85,8 +174,8 @@ const HelpIntentHandler = {
   },
   handle(handlerInput) {
     return handlerInput.responseBuilder
-      .speak('Você pode dizer: pergunta 1, pergunta 2, e assim por diante.')
-      .reprompt('Diga um número de pergunta.')
+      .speak('Diga: pergunta 1, próxima pergunta, ou iniciar quiz.')
+      .reprompt('Como posso ajudar?')
       .getResponse();
   }
 };
@@ -94,8 +183,8 @@ const HelpIntentHandler = {
 // Cancelar / sair
 const CancelAndStopIntentHandler = {
   canHandle(handlerInput) {
-    return Alexa.getIntentName(handlerInput.requestEnvelope) === 'AMAZON.CancelIntent'
-      || Alexa.getIntentName(handlerInput.requestEnvelope) === 'AMAZON.StopIntent';
+    return Alexa.getIntentName(handlerInput.requestEnvelope) === 'AMAZON.StopIntent'
+      || Alexa.getIntentName(handlerInput.requestEnvelope) === 'AMAZON.CancelIntent';
   },
   handle(handlerInput) {
     return handlerInput.responseBuilder
@@ -112,7 +201,7 @@ const FallbackIntentHandler = {
   handle(handlerInput) {
     return handlerInput.responseBuilder
       .speak('Não entendi. Tente dizer: pergunta 1.')
-      .reprompt('Diga o número da pergunta.')
+      .reprompt('Tente novamente.')
       .getResponse();
   }
 };
@@ -138,6 +227,10 @@ const skill = Alexa.SkillBuilders.custom()
   .addRequestHandlers(
     LaunchRequestHandler,
     PerguntaNumeroIntentHandler,
+    ProximaPerguntaIntentHandler,
+    PerguntaAleatoriaIntentHandler,
+    IniciarQuizIntentHandler,
+    RespostaQuizIntentHandler,
     HelpIntentHandler,
     CancelAndStopIntentHandler,
     FallbackIntentHandler
@@ -145,7 +238,7 @@ const skill = Alexa.SkillBuilders.custom()
   .addErrorHandlers(ErrorHandler)
   .create();
 
-// ================= ENDPOINT =================
+// ================= SERVIDOR =================
 
 app.post('/', async (req, res) => {
   try {
@@ -156,8 +249,6 @@ app.post('/', async (req, res) => {
     res.status(500).send('Erro no servidor');
   }
 });
-
-// ================= SERVER =================
 
 const PORT = process.env.PORT || 3000;
 
